@@ -83,3 +83,11 @@
 * *example:*
  ```<section><h1>Heading</h1><p>Insert some text here</p></section>```
 <section><h1>Heading</h1><p>Insert some text here</p></section>
+
+### 10. `<h1>` --- Heading Element
+* *type:* block-level
+* *content:* flow content/heading content/palpable content
+* *support:* All HTML
+* *example:* 
+```<h1> Header </h1> ```
+<h1> Header </h1>
