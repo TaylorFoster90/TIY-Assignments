@@ -43,3 +43,20 @@
 * *example:*
 ```<ul> <li> Thing One </li> <li> Thing Two </li> <li> Thing Three </li> </ul>```
 <ul> <li> Thing One </li> <li> Thing Two </li> <li> Thing Three </li> </ul>
+
+### 6. `<ol>` -- Ordered List
+* *type:* block-level
+* *content:*  flow content/palpable content
+* *support:*  All HTML
+* *example:*
+```<ol> <li> One Thing </li> <li> Two Thing </li> <li> Three Thing </li> </ol>```
+<ol> <li> One Thing </li> <li> Two Thing </li> <li> Three Thing </li> </ol>
+
+### 6. `<blockquote>` -- Long Block Quotation 
+* *type:* block-level
+* *content:* flow content
+* *support:* HTML 5
+* *example:*
+ ```<blockquote> <p>Holler at your boy</p> </blockquote>```
+<blockquote><p> Holler at your boy </p> <blockquote>
+
