@@ -67,3 +67,11 @@
 * *example:*
 ```<article> <h4> Heading </h4> <p> Articles should always include a heading </p> </article>```
 <article> <h4> Heading </h4> <p> Articles should always include a heading </p> </article>
+
+### 8. `<dl>` -- Definition List
+* *type:* block-level 
+* *content:*  flow content/palpable content
+* *support:* All HTML
+* *example:*
+```<dl> <dt> Challenge </dt> <dd> A call to take part in contest or competition </dd> </dl> ```
+<dl><dt>Challenge</dt><dd>A call to take part in contest or competition </dd></dl>
