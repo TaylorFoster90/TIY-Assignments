@@ -60,3 +60,10 @@
  ```<blockquote> <p>Holler at your boy</p> </blockquote>```
 <blockquote><p> Holler at your boy </p> <blockquote>
 
+### 7. `<article>` -- Article Content
+* *type:* block-level
+* *content:* flow content/palpable content/sectioning content
+* *support:* HTML 5
+* *example:*
+```<article> <h4> Heading </h4> <p> Articles should always include a heading </p> </article>```
+<article> <h4> Heading </h4> <p> Articles should always include a heading </p> </article>
