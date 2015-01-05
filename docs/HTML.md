@@ -75,3 +75,11 @@
 * *example:*
 ```<dl> <dt> Challenge </dt> <dd> A call to take part in contest or competition </dd> </dl> ```
 <dl><dt>Challenge</dt><dd>A call to take part in contest or competition </dd></dl>
+
+### 9. `<section>` -- Section Elements
+* *type:* block-level
+* *content:* flow content/sectioning content/palpable content
+* *support:* HTML 5
+* *example:*
+ ```<section><h1>Heading</h1><p>Insert some text here</p></section>```
+<section><h1>Heading</h1><p>Insert some text here</p></section>
