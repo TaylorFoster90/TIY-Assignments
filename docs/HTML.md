@@ -91,3 +91,43 @@
 * *example:* 
 ```<h1> Header </h1> ```
 <h1> Header </h1>
+
+### 11. `<span>` --- Span Element
+* *type:* inline element
+* *content:* flow content/phrasing content
+* *support:* all browsers
+* *example:*
+``` <p>Determine the <span> air speed </span> velocity of an African Swallow </p>```
+<p>Determine the <span> air speed </span> velocity of an African Swallow</p>
+
+### 12. `<small>` --- Small Element
+* *type:* inline element
+* *content:* flow content/phrasing content
+* *support:* all browsers
+* *example:*
+```<p>This text is going <small>to get smaller</small></p> ```
+</p>This text this going <small>to get smaller</small></p>
+
+### 13. `<kbd>` --- Keyboard Input Element 
+* *type:* inline element
+* *content:* flow content/phrasing content/palpable content
+* *support:* all browsers
+* *example:*
+```<p> Press the <kbd>alt</kbd> key</p> ```
+</p>Press the <kbd>alt</kbd> key </p>
+
+### 14. `<strong>` --- Strong Element
+* *type:* inline element
+* *content:* flow content/phrasing content
+* *support:* all browsers
+* *example:*
+```<p>I am <strong>strong</strong> like bull.```
+<p>I am <strong>strong</strong> like bull
+
+### 15. `<button>` --- Button Element
+* *type:* inline element
+* *content:* flow content/phrasing content/interactive content/listed/labelable
+* *support:* all browsers
+* *example:*
+```<button name="button">Dont Press Me</button> ```
+<div><button name="button">Dont Press Me</button>
