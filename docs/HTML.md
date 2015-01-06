@@ -131,3 +131,44 @@
 * *example:*
 ```<button name="button">Dont Press Me</button> ```
 <div><button name="button">Dont Press Me</button>
+
+### 16. `<sub>` --- Subscript Element
+* *type:* inline element
+* *content:* flow content/phrasing content 
+* *support:* all browsers
+* *example:*
+```<p>I need some H<sub>2</sub>O</p>```
+<p>I need some H<sub>2</sub>One
+
+### 17. `<label>` --- Label Element
+* *type:* inline element
+* *content:* flow content/phrasing content/interactive content/form-associated element
+* *support:* all browsers
+* *example:*
+```<div><label>Input Here<input type="text" id="user" name="Name" /></label></div> ```
+<div><label>Input Here<input type="text" id="user" name="Name" /></label></div>
+
+### 18. `<bdo>` --- Bidirectional Override 
+* *type:* inline element
+* *content:* flow content/phrasing content/palpable content
+* *support:* all browsers
+* *example:*
+```<p><bdo dir="rtl>This whole sentence will be in reverse</bdo></p> ```
+<p><bdo dir="rtl"> this whole sentence will be in reverse<bdo></p>
+
+
+### 19. `<b>` --- The B element
+* *type:* inline element
+* *content:* flow content/phrasing content/palpable content 
+* *support:* all browsers
+* *example:*
+```<p> Select the <b>HTML</b> document ```
+<p>Select the <b>HTML</b> document
+
+### 20. `<sup>` --- Superscript Element
+* *type:* inline element
+* *content:* flow content/phrasing content
+* *support:* all browsers
+* *example:*
+```<p>I take classes at <sup>The Iron Yard</sup></p>```
+<p>I take classes at <sup>The Iron Yard</sup></p>
