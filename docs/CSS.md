@@ -15,9 +15,9 @@
 
 #### Values
 
-*`<length>` -- specifies a fixed width
-*`<percentage>` -- relative to the width containing the block
-* `auto` -- auto is replaced by some suitable value 
+* `<length>` -- specifies a fixed width
+* `<percentage>` -- relative to the width containing the block
+*  `auto` -- auto is replaced by some suitable value 
 
 ### 3. `text-align`
 * *elements:* block-containers
@@ -47,5 +47,52 @@
 * *inherited:* no
 
 #### Values
-* `auto` -- Keyword indicating that a new stacking context has to be created only if one properties applied to the element requires it.
+* `auto` -- Keyword indicating that a new stacking context has to be created only if one properties applied to the element requires it
 * `isloate` -- Keyword indicating that a new stacking context must be created
+
+### 6. `resize`
+* *elements:* elements with overflow other than visible
+* *inherited:* no
+
+#### Values
+* `none` -- The element offers no user-controllable method for resizing the element
+* `both` -- The element displays a mechanism for allowing the user to resize the element, which may be resized both horizontally and vertically
+* `horizontal` -- The element displays a mechanism for allowing the user to resize the element, which may only be resized horizontally
+* `vertical` -- The element displays a mechanism for allowing the user to resize the element, which may only be resized vertically
+
+### 7. `font` 
+* *elements:* all elements
+* *inherited:* yes
+
+#### Values
+* `<font-style>`
+* `<font-variant>`
+* `<font-weight>`
+* `<font-size>`
+* `<font-height>`
+* `<font-family>`
+
+### 8. `bottom`
+* *elements:* positioned elements
+* *inherited:* no
+
+#### Values
+* `<length>` -- a negative, null, or positive
+* `<percentage>` -- a percentage of the containing blocks height
+* `auto`
+* `inherit` -- Indicates that the value is the same as the computed value from its parent element
+
+### 9. `widows`
+* *elements:* block container elements
+* *inherited:* yes
+
+#### Values 
+* `<integer>` -- Denotes the minimum amount of lines that can stay alone on the top of a new page
+
+### 10. `border-radius` 
+* *elements:* all elements
+* *inherited:* no
+
+#### Values
+* `<length>` -- Denotes the size of the circle radius or the semi-major and semi-minor axes of the ellipsis
+* `<percentage>` -- Denotes the size of the circle radius, or the semi-major and semi-minor axes of the ellipsis, using percentage values. Percentages for the horizontal axis refer to the width of the box, percentages for the vertical axis refer to the height of the box
