@@ -192,3 +192,36 @@
 * *examples:* 
 
 ````<div draggable="true"> Hello World! </div> ````
+
+`spellcheck` -- element can be Spellchecked or Not
+
+* *values:* *true* or *false*
+* *support:* all browsers
+* *examples:*
+
+````<p spellcheck="false">hjfdshkafsafsadfhasdhff</p>````
+
+`style` -- Style Tag
+
+* *values:* CSS styling declarations
+* *support:* all browsers
+* *example:*
+
+````<p style="color:blue; text-align:center> Hello World! </p>````
+
+`class` -- element class name
+
+* *vaules:* space separated list of classes
+* *support:* all browsers
+* *examples:*
+
+````<h2 class="firstHeader"> Hello World </h2>````
+
+`contenteditable` -- indicates if element should be editable by the user
+
+* *values:* *true* or *false*
+* *support:* all browsers
+* *examples:*
+
+````<p contenteditable="false"> The content in this paragraph cannot be edited </p> ````
+
