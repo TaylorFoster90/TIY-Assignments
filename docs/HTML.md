@@ -225,3 +225,44 @@
 
 ````<p contenteditable="false"> The content in this paragraph cannot be edited </p> ````
 
+`context menu` -- menu that appears upon user interaction
+
+* *values:* *id* and *menu* the id of the <menu > element to open
+* *support:* firefox only
+* *examples:*
+
+````
+<div contextmenu="mymenu">
+<menu type="context" id="mymenu">
+<menuitem label="Refresh"></menuitem>
+<menuitem label="Twitter"></menuitem>
+</menu>
+</div>
+````
+
+`lang` -- specifies the language of the element's content
+
+* *values:* language tag indentifier
+* *support:* all browsers
+* *examples:*
+
+````<p lang="fr"> This will be in French </p>````
+
+`tabindex` -- specifies the tab order of an element
+
+* *values:* number to specify order
+* *support:* all browsers
+* *examples:* 
+
+````
+<a herf="someURL" tabindex="2"> Hello </a>
+<a href="someURL" tabindex="1"> To </a>
+<a href="someURL" tabindex="3"> All </a> ````
+
+`dropzone` -- indicates what types of content can be dropped on an element, using the Drag and Drop API
+
+* *values:* -- *copy* *move* *link*
+* *support* -- no browsers (new to HTML5)
+
+````<div dropzone="copy"> </div>````
+
