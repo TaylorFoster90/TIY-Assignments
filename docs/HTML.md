@@ -172,3 +172,23 @@
 * *example:*
 ```<p>I take classes at <sup>The Iron Yard</sup></p>```
 <p>I take classes at <sup>The Iron Yard</sup></p>
+
+<hr>
+
+## Common HTML Attributes 
+
+`acesskey` -- Keyboard Shortcut for Element
+
+* *values:* space-separated list of characters
+* *support:* all browsers
+* *examples:*
+
+````<a href="someURL" acesskey="h"> Hello World! </a> ````
+
+`draggable` -- Draggable Element
+
+* *values:* *true* or *false*
+* *support:* all browsers
+* *examples:* 
+
+````<div draggable="true"> Hello World! </div> ````
