@@ -172,3 +172,97 @@
 * *example:*
 ```<p>I take classes at <sup>The Iron Yard</sup></p>```
 <p>I take classes at <sup>The Iron Yard</sup></p>
+
+<hr>
+
+## Common HTML Attributes 
+
+`acesskey` -- Keyboard Shortcut for Element
+
+* *values:* space-separated list of characters
+* *support:* all browsers
+* *examples:*
+
+````<a href="someURL" acesskey="h"> Hello World! </a> ````
+
+`draggable` -- Draggable Element
+
+* *values:* *true* or *false*
+* *support:* all browsers
+* *examples:* 
+
+````<div draggable="true"> Hello World! </div> ````
+
+`spellcheck` -- element can be Spellchecked or Not
+
+* *values:* *true* or *false*
+* *support:* all browsers
+* *examples:*
+
+````<p spellcheck="false">hjfdshkafsafsadfhasdhff</p>````
+
+`style` -- Style Tag
+
+* *values:* CSS styling declarations
+* *support:* all browsers
+* *example:*
+
+````<p style="color:blue; text-align:center> Hello World! </p>````
+
+`class` -- element class name
+
+* *vaules:* space separated list of classes
+* *support:* all browsers
+* *examples:*
+
+````<h2 class="firstHeader"> Hello World </h2>````
+
+`contenteditable` -- indicates if element should be editable by the user
+
+* *values:* *true* or *false*
+* *support:* all browsers
+* *examples:*
+
+````<p contenteditable="false"> The content in this paragraph cannot be edited </p> ````
+
+`context menu` -- menu that appears upon user interaction
+
+* *values:* *id* and *menu* the id of the <menu > element to open
+* *support:* firefox only
+* *examples:*
+
+````
+<div contextmenu="mymenu">
+<menu type="context" id="mymenu">
+<menuitem label="Refresh"></menuitem>
+<menuitem label="Twitter"></menuitem>
+</menu>
+</div>
+````
+
+`lang` -- specifies the language of the element's content
+
+* *values:* language tag indentifier
+* *support:* all browsers
+* *examples:*
+
+````<p lang="fr"> This will be in French </p>````
+
+`tabindex` -- specifies the tab order of an element
+
+* *values:* number to specify order
+* *support:* all browsers
+* *examples:* 
+
+````
+<a herf="someURL" tabindex="2"> Hello </a>
+<a href="someURL" tabindex="1"> To </a>
+<a href="someURL" tabindex="3"> All </a> ````
+
+`dropzone` -- indicates what types of content can be dropped on an element, using the Drag and Drop API
+
+* *values:* -- *copy* *move* *link*
+* *support* -- no browsers (new to HTML5)
+
+````<div dropzone="copy"> </div>````
+
