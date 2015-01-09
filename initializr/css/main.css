@@ -70,7 +70,6 @@ textarea {
    }
    #header_nav {
        float:right;
-       margin-top: -17%;
    }
    
    h1 {
@@ -82,14 +81,41 @@ textarea {
        background-color: rgba(0,0,255,.2);
        border-radius: 50%;
        border: solid blue;
+       font-family: serif;
    }
 
 /*  Main Body */
 
-
-
-
-
+    #main {
+        width: 62.5%;
+        margin-left: 0;
+    }
+    #sidebar {
+        width: 37.5%;
+        float: right;
+    }
+    
+    #content {
+        border:solid 2px black;
+        padding-left: 2%;
+        
+    }
+    #sidebar {
+        border: 2px solid green;
+        
+    }
+    .add {
+        border: 2px solid red;
+        
+    }
+    
+    #main{
+        border: 2px solid yellow;
+    }
+    
+    .ad {
+        border: dashed;
+    }
 
 
 
