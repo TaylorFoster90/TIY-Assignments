@@ -60,8 +60,16 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
+   #header {
+       background-image: url(http://lorempixel.com/500/300/);
+       height:200px;
+   }
+   #header_nav {
+       background-color: black;
+       float: right;
+       margin-top: -2%;
+   }
+   
 
 
 
