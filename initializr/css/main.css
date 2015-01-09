@@ -60,20 +60,31 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+
+   /* Header Styles */
+   
    #header {
-       background-image: url(http://lorempixel.com/500/300/);
-       height:200px;
+       padding: 2%;
+       background-image:url(http://rockstartemplate.com/headerdesign/blue_header.jpg);
+       background-attachment: fixed;
    }
    #header_nav {
-       background-color: black;
-       float: right;
-       margin-top: -2%;
+       float:right;
+       margin-top: -17%;
    }
    
+   h1 {
+       font-family: 'Boogaloo';
+       font-size: 3em;
+   }
+   
+   .nav_content:hover {
+       background-color: rgba(0,0,255,.2);
+       border-radius: 50%;
+       border: solid blue;
+   }
 
-
-
-
+/*  Main Body */
 
 
 
