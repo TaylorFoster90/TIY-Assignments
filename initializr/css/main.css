@@ -86,40 +86,43 @@ textarea {
 
 /*  Main Body */
 
-    #main {
-        width: 62.5%;
-        margin-left: 0;
+    .main {
+        width: 70%;
+        margin-left: 2%;
     }
     #sidebar {
-        width: 37.5%;
+        width: 20%;
         float: right;
+        padding: 2%;
     }
     
     #content {
-        border:solid 2px black;
-        padding-left: 2%;
-        
     }
-    #sidebar {
-        border: 2px solid green;
-        
-    }
-    .add {
-        border: 2px solid red;
-        
-    }
-    
-    #main{
-        border: 2px solid yellow;
-    }
-    
-    .ad {
-        border: dashed;
-    }
-
-
-
-
+   
+   .author{
+       font-style: italic;
+       padding-left: 2%;
+       color: rgba(0,0,0,.4)
+   }
+   
+   article figcaption{
+       display: inline;
+       color: rgba(0,0,0,.4);
+       font-style: italic;
+       
+   }
+   article p {
+       font-family: 'Open Sans';
+       color: lightblue;
+   }
+   h3 {
+      font-family: 'Boogaloo';
+      font-size: 20pt;
+      color: lightblue;
+   }
+   article img {
+       border-radius: 20% 50%;
+   }
 /* ==========================================================================
    Media Queries
    ========================================================================== */
