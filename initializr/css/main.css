@@ -88,19 +88,19 @@ textarea {
 
     .main {
         width: 70%;
-        margin-left: 2%;
+        padding-left: 9%;
+        margin-right: 9%;
     }
     #sidebar {
         width: 20%;
         float: right;
-        padding: 2%;
+        padding-right: 9%;
     }
-    
-    #content {
-    }
-   
+    /* articles */
+
    .author{
        font-style: italic;
+       font-family: 'Open Sans';
        padding-left: 2%;
        color: rgba(0,0,0,.4)
    }
@@ -109,11 +109,13 @@ textarea {
        display: inline;
        color: rgba(0,0,0,.4);
        font-style: italic;
+       font-size: 10pt;
        
    }
    article p {
        font-family: 'Open Sans';
        color: lightblue;
+       margin-right: 15%;
    }
    h3 {
       font-family: 'Boogaloo';
@@ -123,6 +125,44 @@ textarea {
    article img {
        border-radius: 20% 50%;
    }
+   /* SideBar*/
+   
+   aside a {
+       color: rgba(0,0,0,.4);
+       text-decoration: none;
+       font-size: 9pt;
+       font-family: 'Open Sans';
+   }
+   aside a:hover {
+       background-color: rgba(0,0,255, .2);
+       border-radius: 50% 20%;
+       color:white;
+   }
+   .sidebar_photo{
+       text-align: center;
+   }
+   .ad{
+       text-align: center;
+       margin-top: 10%;
+   }
+   .ad figcaption {
+       text-align: right;
+       padding-right: 4%;
+   }
+   aside h4 {
+       text-align: center;
+       color: lightblue;
+       font-family: 'Boogaloo';
+       font-size: 20pt;
+   }
+   aside p {
+       color: lightblue;
+   }
+  
+  /* Box Nav */
+  
+  .box {
+  
 /* ==========================================================================
    Media Queries
    ========================================================================== */
