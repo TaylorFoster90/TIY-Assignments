@@ -161,27 +161,54 @@ textarea {
   
   /* Box Nav */
   
+  .box_header {
+      text-align: center;
+      font-family: 'Boogaloo';
+      font-size: 27pt;
+      color: darkblue;
+  }
   .box{
       display: inline-block;
-      height: 20em;
-      width: 19em;
-      text-align: right;
+      text-align: middle;
+      border: solid white;
+      height: 250px;
+      width: 280px;
+  }
+  .box:hover {
+      width: 300px;
+      height: 260px;
   }
   #box_nav{
-      padding: 0;
-      margin: 0;
+      text-align: center;
       padding-left: 2%;
+  }
+  .box a {
+      text-decoration: none;
+      color: white;
   }
   
   
   /* Footer */
   
   footer {
-      border: 2px solid red;
+      background-image: url(http://rockstartemplate.com/headerdesign/blue_header.jpg);
+      background-attachment: fixed;
   }
-  #footer_nav li {
-      list-style: none;
-      display: inline;
+  .footer_nav{ 
+      color:white;
+      margin-right: 0;
+      margin-left: auto;
+      width: 265px;
+  }
+  .footer_nav a {
+      color: white;
+  }
+  .footer-nav a:hover {
+      background-color:rgba(0,0,255, .2);
+  }
+  
+  #footer_logo {
+      border-radius: 50%;
   }
   
  
