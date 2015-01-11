@@ -71,6 +71,16 @@ textarea {
    #header_nav {
        float:right;
    }
+   span {
+       position: absolute;
+       font-weight: bold;
+       color: blue;
+       opacity: .4;
+   }
+   span img{
+       border: 2px solid blue;
+       border-radius: 50%;
+   }
    
    h1 {
        font-family: 'Boogaloo';
@@ -104,6 +114,22 @@ textarea {
        padding-left: 2%;
        color: rgba(0,0,0,.4)
    }
+   .article_buttons{
+       padding-bottom: 3%;
+       padding-top: 1%;
+       
+   }
+   .post_button {
+       color: white;
+       background-color: rgba(0,0,0,.3);
+       border-color: rgba(0,0,255,.4);
+       border-radius: 25%;
+       font-family: 'Oswald';
+       
+   }
+   .post_button:hover {
+       background-color: blue;
+   }
    
    article figcaption{
        display: inline;
@@ -117,6 +143,7 @@ textarea {
        color: lightblue;
        margin-right: 15%;
    }
+   
    h3 {
       font-family: 'Boogaloo';
       font-size: 20pt;
@@ -169,25 +196,24 @@ textarea {
   }
   .box{
       display: inline-block;
-      text-align: middle;
-      border: solid white;
       height: 250px;
       width: 280px;
+      opacity: .5;
   }
   .box:hover {
-      width: 300px;
-      height: 260px;
+      opacity: 1;
+      width: 282px;
   }
   #box_nav{
       text-align: center;
       padding-left: 2%;
+      background-color: #ADD6FF;
   }
-  .box a {
-      text-decoration: none;
-      color: white;
+  #box_nav a {
+      display: inline-block;
+      height: inherit;
+      width: inherit;
   }
-  
-  
   /* Footer */
   
   footer {
@@ -203,14 +229,15 @@ textarea {
   .footer_nav a {
       color: white;
   }
-  .footer-nav a:hover {
-      background-color:rgba(0,0,255, .2);
-  }
-  
   #footer_logo {
       border-radius: 50%;
+      opacity: .4;
   }
   
+  footer nav:hover {
+      background-color: rgba(0,0,255,.3);
+      border-radius: 50% 20%;
+  }
  
 /* ==========================================================================
    Media Queries
