@@ -114,6 +114,12 @@ textarea {
        padding-left: 2%;
        color: rgba(0,0,0,.4)
    }
+   .author_photo {
+       height: 30px;
+       width:30px;
+       border-radius: 50%;
+       
+   }
    .article_buttons{
        padding-bottom: 3%;
        padding-top: 1%;
@@ -125,6 +131,7 @@ textarea {
        border-color: rgba(0,0,255,.4);
        border-radius: 25%;
        font-family: 'Oswald';
+       text-shadow: 1px 1px black;
        
    }
    .post_button:hover {
@@ -145,12 +152,11 @@ textarea {
        margin-right: 15%;
    }
    article p:first-letter {
-       font-size: 25px;
-       font-weight: bold;
-       color: blue;
+       font-size: 20px;
+       text-shadow: -1px -1px 3px darkblue;
    }
    
-   h3 {
+  article h3 {
       font-family: 'Boogaloo';
       font-size: 20pt;
       color: lightblue;
@@ -206,6 +212,15 @@ textarea {
       width: 280px;
       opacity: .5;
   }
+  .box_header {
+      position: absolute;
+      color: darkblue;
+      font-size: 23px;
+      margin-left: 5px;
+      font-family: 'Open Sans';
+      text-shadow: -2px -2px 5px darkblue;
+      
+  }
   .box:hover {
       opacity: 1;
       width: 290px;
@@ -237,6 +252,7 @@ textarea {
   #footer_logo {
       border-radius: 50%;
       opacity: .4;
+      height: 50px;
   }
   
   footer nav:hover {
