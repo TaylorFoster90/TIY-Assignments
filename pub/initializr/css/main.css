@@ -61,37 +61,31 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-#posts {
-    border-left: 10px solid #afdcf8;
+.posts {
+    border-left: 15px solid #afdcf8;
 }
 #container {
     padding-left: 20%;
     padding-right: 20%;
-    border: 1px solid red;
 }
 
-.date_time {
+li time {
     position: absolute;
-    color: grey;
+    opacity: .5;
     left: -200px;
     text-align: center;
-}
-.date {
-    color: rgba(0,0,0, .3);
-    font-size: 15px;
-    font-style: italic;
-
-}
-.time {
-    color: rgba(0,0,0, .3);
-    font-size: 2em;
-    margin-top: 0;
+    display: block;
+    color: #afdcf8;
+    width: 100px;
+} 
+.date_even {
+    color:#277fc2;
 }
 
-li {
+.timeline {
     background-color:#afdcf8;
     border-radius: 5px;
-    padding: 5%;
+    padding: 2% 5%;
     margin-bottom: 2%;
     list-style: none;
     color: white;
@@ -99,22 +93,34 @@ li {
     font-weight: bold;
     position: relative;
 }
-ul {
+.posts big {
+    font-size: 2em;
+}
+.timeline_header{
+    border-bottom: 2px solid white;
+    padding-bottom: 1%;
 }
 
-ul li:nth-child(2n+2){
+
+ol li:nth-child(even){ /* could use (odd) or (even) */
     background-color: #277fc2;
 }
+
+
+
 .bar_icon {
+    font-size: 30px;
     position: absolute;
-    left: -65px;
-    border-radius: 50%;
-    background-color: #277fc2;
-    height: 25px;
-    width: 25px;
     text-align: center;
-    border: 7px solid #afdcf8;
+    left: -80px;
+    border-radius: 50%;
+    background-color: #277fc2; 
+    height: 35px;
+    width: 35px;
+    border: 10px solid #afdcf8;
     top: -2px;
+    padding: 5px;
+    line-height: 35px;
 
 }
 
@@ -122,6 +128,9 @@ ul li:nth-child(2n+2){
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+
+
+
 
 @media only screen and (min-width: 35em) {
 
