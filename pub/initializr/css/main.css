@@ -85,12 +85,13 @@ textarea {
 #timeline_four {
      
 }
-i {
-    background-color:#afdcf8;
-    padding: 1%;
-    border-radius: 50%;
-    border:3px solid #277fc2;
+.date_time {
+    border: 2px solid;
+    position: absolute;
+    left: -120px;
+    color: grey;
 }
+
 li {
     background-color:#afdcf8;
     border-radius: 5px;
@@ -100,6 +101,9 @@ li {
     color: white;
     font-family: "Ubuntu";
     font-weight: bold;
+}
+ul {
+    position: relative;
 }
 
 ul li:nth-child(2n+2){
