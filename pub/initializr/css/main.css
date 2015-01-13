@@ -61,17 +61,50 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+#posts {
+    border-left: 20px solid #afdcf8;
+}
+#container {
+    padding-left: 20%;
+    padding-right: 20%;
+    border: 1px solid red;
+}
 
+#timeline_one {
+    
+}
 
+#timeline_two {
+     
+}
 
+#timeline_three {
+   
+}
 
+#timeline_four {
+     
+}
+i {
+    background-color:#afdcf8;
+    padding: 1%;
+    border-radius: 50%;
+    border:3px solid #277fc2;
+}
+li {
+    background-color:#afdcf8;
+    border-radius: 5px;
+    padding: 5%;
+    margin-bottom: 2%;
+    list-style: none;
+    color: white;
+    font-family: "Ubuntu";
+    font-weight: bold;
+}
 
-
-
-
-
-
-
+ul li:nth-child(2n+2){
+    background-color: #277fc2;
+}
 
 
 
