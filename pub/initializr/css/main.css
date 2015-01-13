@@ -70,26 +70,21 @@ textarea {
     border: 1px solid red;
 }
 
-#timeline_one {
-    
-}
-
-#timeline_two {
-     
-}
-
-#timeline_three {
-   
-}
-
-#timeline_four {
-     
-}
 .date_time {
-    border: 2px solid;
     position: absolute;
-    left: -120px;
     color: grey;
+    left: -200px;
+    text-align: center;
+}
+.date {
+    color: rgba(0,0,0, .3);
+    font-size: 15px;
+
+}
+.time {
+    color: rgba(0,0,0, .3);
+    font-size: 2em;
+    margin-top: 0;
 }
 
 li {
@@ -101,15 +96,25 @@ li {
     color: white;
     font-family: "Ubuntu";
     font-weight: bold;
+    position: relative;
 }
 ul {
-    position: relative;
 }
 
 ul li:nth-child(2n+2){
     background-color: #277fc2;
 }
+.bar_icon {
+    position: absolute;
+    left:-73px;
+    border-radius: 50%;
+    background-color: #277fc2;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    border: 10px solid #afdcf8;
 
+}
 
 
 /* ==========================================================================
