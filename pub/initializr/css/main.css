@@ -143,7 +143,12 @@ header{
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-
+@media screen and (min-width:660px){
+    ol {
+        border-left: 1.5em solid lightblue;
+    }
+    
+}
 
 
 @media only screen and (min-width: 35em) {
