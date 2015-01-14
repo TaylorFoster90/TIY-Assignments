@@ -126,6 +126,7 @@ li time {
     font-family: "Ubuntu";
     font-weight: bold;
     position: relative;
+    font-size: 18px;
 }
 .posts big {
     font-size: 3em;
@@ -163,7 +164,31 @@ ol li:nth-child(even){ /* could use (odd) or (even) */
    Media Queries
    ========================================================================== */
 
+@media screen and (max-width:855px) {
 
+.posts big {
+    font-size: 1em;
+}
+li time {
+    border: 1px solid;
+    width: 100px;
+    left: -190px;
+}
+.timeline {
+    padding:1% 5%;
+}
+header h1 {
+    float: inherit;
+    text-align: center;
+}
+header nav{
+    float: inherit;
+    text-align: center;
+}
+.timeline {
+    font-size: 16px;
+}
+}
 
 
 @media only screen and (min-width: 35em) {
