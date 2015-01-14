@@ -60,7 +60,32 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*Header*/
 
+header{
+        width: 90%;
+        margin: 0 auto;
+    }
+    header h1 {
+        text-align: center;
+        color: blue;
+    }
+    nav {
+        text-align: center;
+    }
+    header nav a {
+        display: inline-block;
+        height: 2em;
+        width: 2em;
+        color: lightblue;
+        border: .4em solid lightblue;
+        border-radius: 50%;
+        line-height: 2em;
+    }
+    header nav a:hover{
+        color: white;
+        background-color: lightblue;
+    }
 
 
 /* ==========================================================================
