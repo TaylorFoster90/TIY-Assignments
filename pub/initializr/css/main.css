@@ -99,13 +99,13 @@ nav a:hover {
     padding-right: 15%;
     padding-top: 2%;
     clear: both;
-    margin-top: 
 }
+
 
 li time {
     position: absolute;
     opacity: .5;
-    left: -230px;
+    left: -250px;
     text-align: center;
     display: block;
     color: #afdcf8;
@@ -153,7 +153,6 @@ ol li:nth-child(even){ /* could use (odd) or (even) */
     height: 35px;
     width: 35px;
     border: 10px solid #afdcf8;
-    top: -2px;
     padding: 5px;
     line-height: 35px;
 
@@ -170,7 +169,6 @@ ol li:nth-child(even){ /* could use (odd) or (even) */
     font-size: 1em;
 }
 li time {
-    border: 1px solid;
     width: 100px;
     left: -190px;
 }
@@ -182,7 +180,7 @@ header h1 {
     text-align: center;
 }
 header nav{
-    float: inherit;
+    float: none;
     text-align: center;
 }
 .timeline {
@@ -190,6 +188,38 @@ header nav{
 }
 }
 
+@media screen and (max-width:720px) {
+    .timeline {
+        font-size: 1em;
+    }
+    .posts {
+    border-left: none;
+}
+time {
+    position: initial;
+
+}
+.bar_icon {
+    position: relative;
+    float: right;
+    left: auto;
+    margin: -80px 2px 0 0px;
+}
+time {
+    width: 100%;
+    position: relative;
+    float: left;
+    margin: -80px 0px 0 200px;
+}
+.timeline {
+    margin-top: 20%;
+}
+#container {
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-top: 2%;
+
+}
 
 @media only screen and (min-width: 35em) {
 
