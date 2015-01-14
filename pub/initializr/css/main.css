@@ -55,6 +55,58 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
+/* Main Article */
+ol {
+        padding-left: 0;
+        list-style: none;
+    }
+    .container {
+        padding:0 5%;
+    }
+    ol article {
+        background-color: lightblue;
+        color: white;
+        border-radius: .5em;
+        font-family: 'Ubuntu';
+    }
+    .even {
+        background-color: #277fc2;
+    }
+    article h3 {
+        text-align: center;
+        border-bottom: solid white;
+        width: 90%;
+        margin: 0 auto;
+    }
+     article p {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1% 0;
+     }
+     li .icon {
+        position: absolute;
+        top: .4em;
+        right: 0;
+        padding: .7em;
+        color: white;
+        background-color: #277fc2;
+        border: .5em lightblue solid;
+        border-radius: 50%;
+        height: 1.5em;
+        width: 1.5em;
+        text-align: center;
+        line-height: 1.5em;
+        margin-top: .5em;
+     }
+     li {
+        display: block;
+        position: relative;
+     }
+     time big {
+        text-align: center;
+        font-family: 'Ubuntu';
+        font-size: 2em;
+     }
 
 
 /* ==========================================================================
