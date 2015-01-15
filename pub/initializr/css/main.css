@@ -80,6 +80,7 @@ header{
         border: .4em solid lightblue;
         border-radius: 50%;
         line-height: 2em;
+        text-align: center;
     }
     header nav a:hover{
         color: white;
@@ -160,7 +161,6 @@ header{
      }
      li time{
         margin-left: -10em;
-        display: inline-block;
         width: 88px;
         float: left;
     }
@@ -187,6 +187,15 @@ header{
         padding-top: 2%;
         padding-bottom: 2%;
     }
+    header nav {
+        text-align: right;
+        padding: 2% 0;
+        }
+    header h1 {
+        position: absolute;
+        top: 0;
+    }
+}
 @media only screen and (min-width: 35em) {
 
 }
