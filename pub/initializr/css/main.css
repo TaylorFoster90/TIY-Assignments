@@ -55,8 +55,39 @@ textarea {
     color: #000;
     padding: 0.2em 0;
 }
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+/*Header*/
+
+header{
+        width: 90%;
+        margin: 0 auto;
+    }
+    header h1 {
+        text-align: center;
+        color: blue;
+    }
+    nav {
+        text-align: center;
+    }
+    header nav a {
+        display: inline-block;
+        height: 2em;
+        width: 2em;
+        color: lightblue;
+        border: .4em solid lightblue;
+        border-radius: 50%;
+        line-height: 2em;
+    }
+    header nav a:hover{
+        color: white;
+        background-color: lightblue;
+    }
+
 /* Main Article */
-ol {
+    ol {
         padding-left: 0;
         list-style: none;
     }
@@ -110,47 +141,52 @@ ol {
 
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-/*Header*/
-
-header{
-        width: 90%;
-        margin: 0 auto;
-    }
-    header h1 {
-        text-align: center;
-        color: blue;
-    }
-    nav {
-        text-align: center;
-    }
-    header nav a {
-        display: inline-block;
-        height: 2em;
-        width: 2em;
-        color: lightblue;
-        border: .4em solid lightblue;
-        border-radius: 50%;
-        line-height: 2em;
-    }
-    header nav a:hover{
-        color: white;
-        background-color: lightblue;
-    }
-
-
-/* ==========================================================================
    Media Queries
    ========================================================================== */
-@media screen and (min-width:660px){
+@media screen and (min-width:600px){
     ol {
         border-left: 1.5em solid lightblue;
+        padding-left: 30px;
     }
-    
-}
-
-
+     time big {
+        font-size: 2em;
+     }
+     .container{
+        padding-left: 18%;
+        padding-right: 2%;
+     }
+     br {
+        margin-left: -10em;
+     }
+     li time{
+        margin-left: -10em;
+        display: inline-block;
+        width: 88px;
+        float: left;
+    }
+      li .icon {
+        position: absolute;
+        left: 0;
+        top:0;
+        margin-left: -4.5em;
+        margin-top: -.5em;
+    }
+    li {
+        margin-top: 1em;
+    }
+    }
+@media screen and (min-width: 900px){
+    .container{
+        padding-left:13%;
+        padding-right: 5%;
+    }
+    li {
+        margin-top: 2.5em
+    }
+    article {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
 @media only screen and (min-width: 35em) {
 
 }
