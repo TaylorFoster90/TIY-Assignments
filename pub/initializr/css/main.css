@@ -56,82 +56,146 @@ textarea {
     padding: 0.2em 0;
 }
 
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*Header*/
 
-.posts {
-    border-left: 15px solid #afdcf8;
-}
-#container {
-    padding-left: 20%;
-    padding-right: 20%;
-}
+header{
+        width: 90%;
+        margin: 0 auto;
+    }
+    header h1 {
+        text-align: center;
+        color: blue;
+    }
+    nav {
+        text-align: center;
+    }
+    header nav a {
+        display: inline-block;
+        height: 2em;
+        width: 2em;
+        color: lightblue;
+        border: .4em solid lightblue;
+        border-radius: 50%;
+        line-height: 2em;
+        text-align: center;
+    }
+    header nav a:hover{
+        color: white;
+        background-color: lightblue;
+    }
 
-li time {
-    position: absolute;
-    opacity: .5;
-    left: -200px;
-    text-align: center;
-    display: block;
-    color: #afdcf8;
-    width: 100px;
-} 
-.date_even {
-    color:#277fc2;
-}
-
-.timeline {
-    background-color:#afdcf8;
-    border-radius: 5px;
-    padding: 2% 5%;
-    margin-bottom: 2%;
-    list-style: none;
-    color: white;
-    font-family: "Ubuntu";
-    font-weight: bold;
-    position: relative;
-}
-.posts big {
-    font-size: 2em;
-}
-.timeline_header{
-    border-bottom: 2px solid white;
-    padding-bottom: 1%;
-}
-
-
-ol li:nth-child(even){ /* could use (odd) or (even) */
-    background-color: #277fc2;
-}
-
-
-
-.bar_icon {
-    font-size: 30px;
-    position: absolute;
-    text-align: center;
-    left: -80px;
-    border-radius: 50%;
-    background-color: #277fc2; 
-    height: 35px;
-    width: 35px;
-    border: 10px solid #afdcf8;
-    top: -2px;
-    padding: 5px;
-    line-height: 35px;
-
-}
+/* Main Article */
+    ol {
+        padding-left: 0;
+        list-style: none;
+    }
+    .container {
+        padding:0 5%;
+    }
+    ol article {
+        background-color: lightblue;
+        color: white;
+        border-radius: .5em;
+        font-family: 'Ubuntu';
+    }
+    .even {
+        background-color: #277fc2;
+    }
+    article h3 {
+        text-align: center;
+        border-bottom: solid white;
+        width: 90%;
+        margin: 0 auto;
+    }
+     article p {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1% 0;
+     }
+     li .icon {
+        position: absolute;
+        top: .4em;
+        right: 0;
+        padding: .7em;
+        color: white;
+        background-color: #277fc2;
+        border: .5em lightblue solid;
+        border-radius: 50%;
+        height: 1.5em;
+        width: 1.5em;
+        text-align: center;
+        line-height: 1.5em;
+        margin-top: .5em;
+     }
+     li {
+        display: block;
+        position: relative;
+     }
+     time big {
+        text-align: center;
+        font-family: 'Ubuntu';
+        font-size: 2em;
+     }
 
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-
-
-
-
+@media screen and (min-width:600px){
+    ol {
+        border-left: 1.5em solid lightblue;
+        padding-left: 30px;
+    }
+     time big {
+        font-size: 2em;
+     }
+     .container{
+        padding-left: 18%;
+        padding-right: 2%;
+     }
+     br {
+        margin-left: -10em;
+     }
+     li time{
+        margin-left: -10em;
+        width: 88px;
+        float: left;
+    }
+      li .icon {
+        position: absolute;
+        left: 0;
+        top:0;
+        margin-left: -4.5em;
+        margin-top: -.5em;
+    }
+    li {
+        margin-top: 1em;
+    }
+    }
+@media screen and (min-width: 900px){
+    .container{
+        padding-left:13%;
+        padding-right: 5%;
+    }
+    li {
+        margin-top: 2.5em
+    }
+    article {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    header nav {
+        text-align: right;
+        padding: 2% 0;
+        }
+    header h1 {
+        position: absolute;
+        top: 0;
+    }
+}
 @media only screen and (min-width: 35em) {
 
 }
