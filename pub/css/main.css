@@ -159,6 +159,9 @@ article adress,article figcaption {
     font-family: 'Indie Flower';
     padding-left: 1em;
 }
+button mark {
+    display: none;
+}
 
 /* Aside(sidebar) Styles */
 
@@ -197,7 +200,7 @@ aside p {
 
 .box_nav {
     list-style: none;
-    border: solid;
+    border-bottom: 1px solid white;
     padding-left: 0;
     background-color: #000099;
     margin-bottom: 0;
@@ -221,6 +224,7 @@ aside p {
 /* Footer */
 
 footer {
+    padding:2% 0;
     color: white;
     background-color: #000099;
     width: 100%;
@@ -230,7 +234,6 @@ footer a {
     color: white;
     text-decoration: none;
 }
-
 
 /* ==========================================================================
    Helper classes
