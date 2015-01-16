@@ -147,6 +147,7 @@ article p {
     color: #0033CC;
     font-family: "Waiting For The Sunrise";
     font-size: 1.3em;
+    margin-bottom: 0;
 }
 article img {
     border-radius: .5em;
@@ -161,6 +162,16 @@ article adress,article figcaption {
 }
 button mark {
     display: none;
+}
+button {
+    color: white;
+    background-color: #333399;
+    border: none;
+    margin-left: .5em;
+    border-radius: 10%;
+}
+.buttons {
+    padding:.5em 0 2em 0em;
 }
 
 /* Aside(sidebar) Styles */
