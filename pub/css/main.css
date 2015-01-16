@@ -193,16 +193,28 @@ aside p {
     font-size: 1.3em;
 }
 
+/*Box Navigation*/
 
-
-
-
-
-
-
-
-
-
+.box_nav {
+    list-style: none;
+    border: solid;
+    padding-left: 0;
+} 
+.box_nav li {
+    height: 380px;
+    width: 380px;
+    opacity: .5;
+    margin: 0 auto;
+}
+.box_nav li:hover{
+    opacity: 1;
+}
+.box_nav a {
+    text-align: center;
+    text-decoration: none;
+    color:#333399 ;
+    text-shadow:3px 3px 4px lightblue;
+}
 
 
 
