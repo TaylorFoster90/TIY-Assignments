@@ -124,6 +124,36 @@ header h1 {
     background-color: darkblue;
     opacity: .5;
 }
+header input {
+    background-color: #333399;
+    border: none;
+    border-radius: .5em;
+}
+
+/*Article Styles*/
+
+.container {
+    padding: 0 10%;
+}
+article h3 {
+    font-size: 1.3em;
+    color: #333399;
+}
+article p {
+    color: #0033CC;
+}
+article img {
+    border-radius: .5em;
+}
+
+adress,figcaption {
+    font-size: 1.1em;
+    color: grey;
+    font-style: italic;
+    font-family: 'Indie Flower';
+    padding-left: 1em;
+}
+
 
 
 
