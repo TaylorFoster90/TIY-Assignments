@@ -140,9 +140,13 @@ header input {
 article h3 {
     font-size: 1.3em;
     color: #333399;
+    font-family:'Raleway';
+    font-weight: bold;
 }
 article p {
     color: #0033CC;
+    font-family: "Waiting For The Sunrise";
+    font-size: 1.3em;
 }
 article img {
     border-radius: .5em;
@@ -159,11 +163,34 @@ article adress,article figcaption {
 /* Aside(sidebar) Styles */
 
 aside {
-    padding-top: 2em;
+    padding-top: 3em;
     width: 80%;
     margin: 0 auto;
-    border: solid;
     text-align: center;
+}
+aside .ad {
+    margin-top: 2em;
+}
+aside a{
+    text-decoration: none;
+    color:grey;
+    font-family: 'Raleway';
+}
+aside img {
+    border-radius: 1em;
+}
+aside .ad figcaption {
+    text-align: right;
+    color: grey;
+    font-family: 'Indie Flower'
+}
+aside h3 {
+    color: #333399;
+}
+aside p {
+    color: #0033CC;
+    font-family: 'Waiting For The Sunrise';
+    font-size: 1.3em;
 }
 
 
