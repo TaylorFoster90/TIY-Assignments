@@ -138,15 +138,14 @@ header input {
     padding: 0 10%;
 }
 article h3 {
-    font-size: 1.3em;
+    font-size: 1.75em;
     color: #333399;
     font-family:'Raleway';
     font-weight: bold;
 }
 article p {
     color: #0033CC;
-    font-family: "Waiting For The Sunrise";
-    font-size: 1.3em;
+    font-family: "Raleway";
     margin-bottom: 0;
 }
 article img {
@@ -244,6 +243,12 @@ footer {
 footer a {
     color: white;
     text-decoration: none;
+}
+footer img {
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    opacity: .4;
 }
 
 /* ==========================================================================
