@@ -211,6 +211,11 @@ aside p {
 
 /*Box Navigation*/
 
+.box_header {
+    text-align: center;
+    color:#333399;
+}
+
 .box_nav {
     background-color: darkblue;
     text-align: center;
@@ -353,7 +358,7 @@ footer img {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media screen and (min-width:800px) {
+@media screen and (min-width:700px) {
     header nav {
         float: right;
     }
@@ -379,10 +384,11 @@ footer img {
         width: 80%;
     }
     aside {
+        padding-right: 10%;
         width: 30%;
         position: absolute;
         top:0;
-        right: 1em;
+        right: 0;
         padding-top: 0;
 
     }
@@ -398,6 +404,25 @@ footer img {
     .box_nav img {
     width: 24%;
     display: initial;
+}
+}
+@media screen and (min-width: 1000px) {
+
+    aside {
+        padding-right: 0;
+    }
+    article {
+        width: 90%;
+    }
+    article h3 {
+        font-size: 2.2em;
+    }
+    article p {
+        font-size: 1.2em;
+    }
+    article figcaption {
+        display: inline;
+    }
 }
 
 
