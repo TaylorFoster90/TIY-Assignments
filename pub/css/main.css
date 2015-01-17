@@ -102,7 +102,6 @@ textarea {
 header {
     width: 100%;
     color: white;
-    border: solid;
     margin: 0 auto;
     text-align: center;
     background-image: url(http://freetwitterheaders.net/wp-content/uploads/2012/12/Water-Droplets.jpg);
@@ -361,6 +360,23 @@ footer img {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+@media screen and (min-width:800px) {
+    header {
+    }
+    header nav {
+        float: right;
+    }
+    .fork {
+        float: left;
+        margin-top: 0;
+
+    }
+    header h1 {
+        clear: both;
+        font-size: 3em;
+        padding-bottom: 1em;
+
+    }
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
