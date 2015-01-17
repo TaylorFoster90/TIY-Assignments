@@ -411,6 +411,9 @@ footer img {
     aside {
         padding-right: 0;
     }
+    .ad figcaption {
+        padding-left: 4em;
+    }
     article {
         width: 90%;
     }
@@ -422,6 +425,24 @@ footer img {
     }
     article figcaption {
         display: inline;
+    }
+    footer {
+        position: relative;
+        padding-top: 8%;
+        font-size: .8em;
+    }
+    footer figure {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    footer figcaption {
+        display: inline;
+    }
+    footer nav {
+        position: absolute;
+        bottom: 0;
+        right: 0;
     }
 }
 
