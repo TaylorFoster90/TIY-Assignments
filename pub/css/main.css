@@ -212,28 +212,21 @@ aside p {
 /*Box Navigation*/
 
 .box_nav {
-    list-style: none;
-    border-bottom: 1px solid white;
-    padding-left: 0;
-    background-color: #000099;
-    margin-bottom: 0;
-} 
-.box_nav li {
-    height: 9.5em;
-    width: 9.5em;
+    background-color: darkblue;
+    text-align: center;
+}
+.box_nav img {
+    height: 25%;
+    width: 50%;
     opacity: .5;
+    display: block;
     margin: 0 auto;
 }
-.box_nav li:hover{
+.box_nav img:hover {
     opacity: 1;
 }
-.box_nav a {
-    text-align: center;
-    font-size: 2.5em;
-    text-decoration: none;
-    color:#333399;
-    text-shadow:3px 3px 4px lightblue;
-}
+
+
 /* Footer */
 
 footer {
@@ -393,9 +386,20 @@ footer img {
         padding-top: 0;
 
     }
+    .buttons mark {
+        display: initial;
+        background-color: inherit;
+        color: inherit;
+
+    }
     aside .ad figcaption {
         text-align: left;
     }
+    .box_nav img {
+    width: 24%;
+    display: initial;
+}
+
 
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
