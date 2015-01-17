@@ -172,6 +172,10 @@ button {
 .buttons {
     padding:.5em 0 2em 0em;
 }
+button:hover {
+    color: #333399;
+    background-color: white;
+    }
 
 /* Aside(sidebar) Styles */
 
