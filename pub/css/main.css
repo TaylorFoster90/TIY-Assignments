@@ -361,8 +361,6 @@ footer img {
    Modify as content requires.
    ========================================================================== */
 @media screen and (min-width:800px) {
-    header {
-    }
     header nav {
         float: right;
     }
@@ -376,6 +374,27 @@ footer img {
         font-size: 3em;
         padding-bottom: 1em;
 
+    }
+    .container {
+        padding: 0 5%;
+        position: relative;
+    }
+    article {
+        width: 70%;
+    }
+    article p {
+        width: 80%;
+    }
+    aside {
+        width: 30%;
+        position: absolute;
+        top:0;
+        right: 1em;
+        padding-top: 0;
+
+    }
+    aside .ad figcaption {
+        text-align: left;
     }
 
 @media only screen and (min-width: 35em) {
