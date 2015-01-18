@@ -158,6 +158,13 @@ article adress,article figcaption {
     font-family: 'Indie Flower';
     padding-left: 1em;
 }
+.pullquote {
+    display: block;
+    padding: 1% 0 2% 1%;
+    font-size: 1.5em;
+    border-left: solid grey;
+
+}
 button mark {
     display: none;
 }
@@ -223,14 +230,24 @@ aside p {
 .box_nav img {
     height: 25%;
     width: 50%;
-    opacity: .5;
     display: block;
     margin: 0 auto;
 }
-.box_nav img:hover {
+.box_nav a{
+    opacity: .5;
+}
+.box_nav a:hover {
     opacity: 1;
 }
-
+.box_nav span {
+    position: absolute;
+    display: inline-block;
+    padding-top: 20%;
+    color: #333399;
+    text-shadow:1px 1px 3px white;
+    margin-left: -3em;
+    font-size: 1.5em;
+}
 
 /* Footer */
 
@@ -405,9 +422,16 @@ footer img {
     width: 24%;
     display: initial;
 }
+.box_nav span {
+    margin-left: initial;
+    font-size: 1.5em;
+}
 }
 @media screen and (min-width: 1000px) {
 
+    header h1 {
+        font-size: 4em;
+    }
     aside {
         padding-right: 0;
     }
@@ -426,10 +450,16 @@ footer img {
     article figcaption {
         display: inline;
     }
+    .box_header {
+        font-size: 2.2em;
+    }
+    .box_nav span {
+        font-size: 2em;
+    }
     footer {
         position: relative;
         padding-top: 8%;
-        font-size: .8em;
+        font-size: .80em;
     }
     footer figure {
         position: absolute;
