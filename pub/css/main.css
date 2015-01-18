@@ -235,6 +235,7 @@ aside p {
 .box_nav img {
     height: 25%;
     width: 50%;
+    opacity: .5;
     display: block;
     margin: 0 auto;
 }
@@ -242,6 +243,9 @@ aside p {
     opacity: .5;
 }
 .box_nav a:hover {
+    opacity: 1;
+}
+.box_nav img:hover {
     opacity: 1;
 }
 .box_nav span {
