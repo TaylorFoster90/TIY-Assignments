@@ -1,0 +1,571 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+/* Header Styles */
+
+header {
+    width: 100%;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(http://www.carsonhealth.org/assets/images/bg_header.jpg);
+}
+header a {
+    color: white;
+    text-decoration: none;
+}
+header h1 {
+    margin: 0 auto;
+    font-family: 'Oswald';
+}
+header h6 {
+    margin: 0 auto;
+    color: grey;
+}
+.fork {
+    line-height: 1.5em;
+    margin-top: .4em;
+    height: 1.5em;
+    width: 1.5em;
+    border: solid .2em white;
+    font-size: 2em;
+    border-radius: 50%;
+    background-color:#333399;
+    opacity: .5;
+}
+header input {
+    background-color: #333399;
+    border: none;
+    border-radius: .5em;
+    color:white;
+}
+
+/*Article Styles*/
+
+.container {
+    padding: 0 10%;
+}
+article h3 {
+    font-size: 1.75em;
+    color: #333399;
+    font-family:'Oswald';
+    font-weight: bold;
+}
+article p {
+    font-family: 'Open Sans';
+    margin-bottom: 0;
+}
+article img {
+    border-radius: .5em;
+}
+
+article adress,article figcaption {
+    font-size: 1.1em;
+    color: grey;
+    font-style: italic;
+    font-family: 'Indie Flower';
+    padding-left: 1em;
+}
+.pullquote {
+    display: block;
+    padding: 1% 0 2% 1%;
+    font-size: 1.5em;
+    color: #333399;
+    border-left: solid grey;
+
+}
+button mark {
+    display: none;
+}
+button {
+    color: white;
+    background-color: #333399;
+    border: none;
+    margin-left: .5em;
+    border-radius: 10%;
+}
+.buttons {
+    padding:.5em 0 2em 0em;
+}
+button:hover {
+    color: #333399;
+    background-color: white;
+    }
+
+/* Aside(sidebar) Styles */
+
+aside {
+    padding-top: 3em;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+aside .ad {
+    margin-top: 2em;
+}
+aside a{
+    text-decoration: none;
+    color:grey;
+    font-family: 'Open Sans';
+}
+aside img {
+    border-radius: 1em;
+}
+aside .ad figcaption {
+    text-align: right;
+    color: grey;
+    font-family: 'Indie Flower'
+}
+aside h3 {
+    color: #333399;
+}
+aside p {
+    color: #0033CC;
+    font-family: 'Open Sans';
+}
+
+/*Box Navigation*/
+
+.box_header {
+    text-align: center;
+    color:#333399;
+    font-family: 'Oswald';
+}
+
+.box_nav {
+    background-color: darkblue;
+    text-align: center;
+}
+.box_nav img {
+    height: 25%;
+    width: 50%;
+    opacity: .5;
+    display: block;
+    margin: 0 auto;
+}
+.box_nav a{
+    opacity: .5;
+}
+.box_nav a:hover {
+    opacity: 1;
+}
+.box_nav img:hover {
+    opacity: 1;
+}
+.box_nav span {
+    position: absolute;
+    display: inline-block;
+    padding-top: 20%;
+    color: #333399;
+    text-shadow:1px 1px 3px white;
+    margin-left: -3em;
+    font-size: 1.5em;
+}
+
+/* Footer */
+
+footer {
+    padding:2% 0;
+    color: white;
+    background-color: #000099;
+    width: 100%;
+    text-align: center;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+}
+footer img {
+    height: 5em;
+    width: 5em;
+    border-radius: 50%;
+    opacity: .4;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media screen and (min-width:700px) {
+    header nav {
+        float: right;
+    }
+    .fork {
+        float: left;
+        margin-top: 0;
+
+    }
+    header h1 {
+        clear: both;
+        font-size: 3em;
+    }
+    header h6 {
+        padding-bottom: 4em;
+    }
+    .container {
+        padding: 0 5%;
+        position: relative;
+    }
+    article {
+        width: 70%;
+    }
+    article p {
+        width: 80%;
+    }
+    aside {
+        padding-right: 10%;
+        width: 30%;
+        position: absolute;
+        top:0;
+        right: 0;
+        padding-top: 0;
+
+    }
+    .buttons mark {
+        display: initial;
+        background-color: inherit;
+        color: inherit;
+
+    }
+    aside .ad figcaption {
+        text-align: left;
+    }
+    .box_nav img {
+    width: 24%;
+    display: initial;
+}
+.box_nav span {
+    margin-left: initial;
+    font-size: 1.5em;
+}
+}
+@media screen and (min-width: 1000px) {
+
+    header h1 {
+        font-size: 5em;
+    }
+    aside {
+        padding-right: 0;
+    }
+    .ad figcaption {
+        padding-left: 4em;
+    }
+    article {
+        width: 90%;
+    }
+    article h3 {
+        font-size: 2em;
+    }
+    article img {
+        padding-left: 10%
+    }
+    article figcaption {
+        display: inline;
+    }
+    .box_header {
+        font-size: 2.2em;
+    }
+    .box_nav span {
+        font-size: 2em;
+    }
+    footer {
+        position: relative;
+        padding-top: 8%;
+        font-size: .80em;
+    }
+    footer figure {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    footer figcaption {
+        display: inline;
+    }
+    footer nav {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
