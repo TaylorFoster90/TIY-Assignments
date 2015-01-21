@@ -169,3 +169,66 @@ var1 == 3
 2 <= var1 // true
 ````
 
+### [Control Flow: Block Statement](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Statements)
+
+* _symbol_: `{ }` 
+* _pronunciation_: "block statement" 
+* _examples_:
+````
+{
+	statement_1;
+	statement_2;
+	.
+	.
+	.
+	statment_n;
+}
+````
+
+### []()
+
+*_symbol_:
+*_pronunciation_:
+*_examples_:
+````
+````
+
+### []()
+
+*_symbol_:
+*_pronunciation_:
+*_examples_:
+````
+````
+
+### []()
+
+*_symbol_:
+*_pronunciation_:
+*_examples_:
+````
+````
+
+### []()
+
+*_symbol_:
+*_pronunciation_:
+*_examples_:
+````
+````
+
+### []()
+
+*_symbol_:
+*_pronunciation_:
+*_examples_:
+````
+````
+
+### []()
+
+*_symbol_:
+*_pronunciation_:
+*_examples_:
+````
+````
