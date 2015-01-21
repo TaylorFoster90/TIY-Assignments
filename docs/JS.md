@@ -185,20 +185,35 @@ var1 == 3
 }
 ````
 
-### []()
+### [Conditional Statements: if...else](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Statements)
 
-*_symbol_:
-*_pronunciation_:
-*_examples_:
+* _symbol_: `if() { statement;} else{ statement;}`
+* _pronunciation_: "if else" If execute a statement if a logical condition is true Else execute a statement if the condition is false
+* _examples_:
 ````
+if(condition) {
+	statement_1;
+} else {
+	statement_2;
+}
+
 ````
 
-### []()
+### [Conditional Statements: if..else..else if](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Statements)
 
-*_symbol_:
-*_pronunciation_:
-*_examples_:
+* _symbol_: `if(){statement;} else if(){statement;} else{statement;};`
+* _pronunciation_: "if else else if" else if to have multiple conditions tested
+* _examples_:
 ````
+if (condition_1) {
+	statement_1;
+} else if (condition_2){
+	statement_2;
+} else if (condition_n) {
+	statement_n;
+} else {
+	statement_last;
+}
 ````
 
 ### []()
