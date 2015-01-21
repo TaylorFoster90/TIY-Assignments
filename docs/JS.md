@@ -96,33 +96,75 @@ var x;
 * _pronunciation_: "equal" "is equal"
 * _examples_:
 ````
-3 == var1
-"3" == var1
-3 == '3'
+3 == 3  //true
 ````
 
 ### [Comparison Operator: Not Equal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Comparison_operators)
 
 * _symbol_: `!=`
-* _pronunciation_: "not equal" 
+* _pronunciation_: "not equal" "does not equal" 
 * _examples_:
 ````
-var1 != 4
-var2 != "3"
+var1 = 3
+var1 != 4 //true
 ````
 
-### []()
+### [Comparison Operator: Strict Equal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Comparison_operators)
 
-* _symbol_:
-* _pronunciation_:
+* _symbol_: `===` 
+* _pronunciation_: "strict equal" return true if the operands are equal and of the same type
 * _examples_:
 ````
+var1 == 3
+3 === var1  //true
 ````
 
-### []()
+### [Comparison Operator: Strict Not Equal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Comparison_operators)
 
-* _symbol_:
-* _pronunciation_:
+* _symbol_: `!==` 
+* _pronunciation_: "strict not equal" returns true if the operands are not equal and/or not of same type
 * _examples_:
 ````
+var1 == 3
+var1 !== "3" // true
+````
+
+### [Comparison Operator: Greater Than](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Comparison_operators)
+
+* _symbol_: `>`
+* _pronunciation_: "greater than" "is greater than"
+* _examples_:
+````
+var1 == 3
+4 > var1 // true 
+````
+
+### [Comparison Operator: Greater Than or Equal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Comparison_operators)
+
+* _symbol_: `>=` 
+* _pronunciation_: "greater than or equal to" "is greater than or equal to"
+* _examples_:
+````
+var1 == 3
+4 >= var1 // true
+````
+
+### [Comparison Operator: Less Than](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Comparison_operators)
+
+* _symbol_: `<` 
+* _pronunciation_: "less than" "is less than"
+* _examples_:
+````
+var1 == 3
+1 < var1 // true
+````
+
+### [Comparison Operator: Less Than or Equal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#Comparison_operators)
+
+* _symbol_: `<=` 
+* _pronunciation_: "less than or equal to" "is less than or equal to"
+* _examples_:
+````
+var1 == 3
+2 <= var1 // true
 ````
