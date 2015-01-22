@@ -41,6 +41,7 @@ assert.equal(div(8,4),2);
 
 
 assert.equal(prod(3,5),diff(20,5));
+assert.equal(prod(2,10), div(40,2), add(35,5), diff(100,80));
 
 
 
