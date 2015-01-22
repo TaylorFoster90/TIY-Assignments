@@ -29,3 +29,13 @@ function prod(A, B){
 
 assert(prod);
 assert.equal(prod(2,7),14);
+
+// division //
+
+function div(A, B){
+	return A / B;
+}
+
+assert(div);
+assert.equal(div(8,4),2);
+
