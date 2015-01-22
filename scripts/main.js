@@ -7,7 +7,7 @@
 var assert = require('assert');
 
 function add(A, B){
-	console.log(A + B);
+	return A + B;
 };
 assert(add);
 assert.equal(add(1,3),4);
