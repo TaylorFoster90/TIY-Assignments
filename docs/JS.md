@@ -360,3 +360,27 @@ return false;
 return x;
 return x + y / 3;
 ````
+
+### Literal: [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+* *symbol:* `[ ]`
+* *pronunciation:* "array", "new array" high-level, list-like objects
+* *examples:*
+````
+[element0, element1,..., elementN]
+new Array(element0, element1[, ...[. elementN]])
+new Array(arrayLength)
+````
+
+#### `Array.length`
+
+* *value:* `Number` of?
+* *examples:*
+```javascript
+```
+
+#### [`Array.prototype.pop()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
+
+* *result:* what does it do?
+* *parameters:* does it have any?
+* *returns:* what types? from where?
