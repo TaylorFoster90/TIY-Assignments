@@ -20,3 +20,12 @@ function diff(A, B){
 }
 assert(diff);
 assert.equal(diff(4,4),0);
+
+//multiplication//
+
+function prod(A, B){
+	return A * B;
+}
+
+assert(prod);
+assert.equal(prod(2,7),14);
