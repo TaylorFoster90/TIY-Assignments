@@ -11,3 +11,4 @@ function add(A, B){
 };
 assert(add);
 assert.equal(add(1,3),4);
+assert.equal(add(4,4),8);
