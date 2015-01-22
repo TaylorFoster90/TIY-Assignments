@@ -39,3 +39,8 @@ function div(A, B){
 assert(div);
 assert.equal(div(8,4),2);
 
+
+assert.equal(prod(3,5),diff(20,5));
+
+
+
