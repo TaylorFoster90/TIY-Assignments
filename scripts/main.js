@@ -4,9 +4,10 @@
  * @return sum of A and B
  */
 
-assert.ok(add == 2, "tests to see if sum i equal to 2");
+var assert = require('assert');
 
 function add(A, B){
 	console.log(A + B);
 };
-assert(add(1,1) == 2)
+assert(add);
+assert.equal(add(1,3),4);
