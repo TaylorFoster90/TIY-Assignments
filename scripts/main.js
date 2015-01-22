@@ -1,12 +1,7 @@
-/**
- * @param Number A
- * @param Number B
- * @return sum of A and B
- */
 
 var assert = require('assert');
 
-function add(A, B){
+/*function add(A, B){
 	return A + B;
 };
 assert(add);
@@ -41,7 +36,11 @@ assert.equal(div(8,4),2);
 
 
 assert.equal(prod(3,5),diff(20,5));
-assert.equal(prod(2,10), div(40,2), add(35,5), diff(100,80));
+assert.equal(prod(2,10), div(40,2), add(35,5), diff(100,80)); */
 
+function plus(string, string){
+	return 2;
+}
+assert(plus("one", "one") === 2);
 
 
