@@ -25,6 +25,9 @@ function toEnglish(A) {
 		return "zero"
 	}
 }
+it('should take 0 and return "zero"', function(){
+	assert.equal(toEnglish(0), "zero");
+});
 
 it('should take 1 and return "one"', function(){
 	assert.equal(toEnglish(1), "one");
