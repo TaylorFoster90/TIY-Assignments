@@ -112,77 +112,74 @@ table {
         width: 10%;
         padding-bottom: 10%;
         border: 1px solid black;
+        position: relative;
     }
     tbody :nth-child(even) td:nth-child(even),
     tbody :nth-child(odd) td:nth-child(odd){
         background-color: violet;
     }
 /*Chess Pieces*/
+td:before {
+    position: absolute;
+    font-size: 2em;
+}
+{
+    background-color: green
+}
+
 
 /*Black Pieces*/
 
-/*Rooks*/
-    #A8:before, #H8:before {
+/*Rooks*/ 
+    .black.rook:before {
         content:"\265C";
-        position: absolute;
     }
 /*knights*/
-    #B8:before, #G8:before {
+    .black.knight:before {
         content: "\265E";
-        position: absolute;
     }
 /*bishops*/
-    #C8:before, #F8:before {
+    .black.bishop:before {
         content: "\265D";
-        position: absolute;
     }
 /*Queen*/
-    #D8:before {
+    .black.queen:before {
         content: "\265B";
-        position: absolute;
     }
 /*king*/
-    #E8:before {
+    .black.king:before {
         content: "\265A";
-        position: absolute;
     }
 /* pons */
-    #A7:before, #B7:before, #C7:before, #D7:before, #E7:before, #F7:before, #G7:before, #H7:before{
-        position: absolute;
+   .black.pawn:before {
         content: "\265F"
     }
 
 /* white pieces */
 
 /* rooks */
-    #A1:before, #H1:before{
+    .white.rook:before {
         content: "\2656";
-        position: absolute;
     }
 /*knights*/
-    #B1:before, #G1:before {
+    .white.knight:before {
         content:"\2658";
-        position: absolute; 
     }
 /*bishops*/
-    #C1:before, #F1:before {
+    .white.bishop:before {
         content: "\2657";
-        position: absolute;
     }
 /*queen*/
-    #D1:before {
+    .white.queen:before {
         content: "\2655" ;
-        position: absolute;
     }
 /*king*/
-    #E1:before {
+    .white.king:before {
         content: "\2654";
-        position: absolute;
     }
 /*pawns*/
-    #A2:before, #B2:before, #C2:before, #D2:before, #E2:before, #F2:before, #G2:before, #H2:before {
+    .white.pawn:before {
         content: "\2659";
-        position: absolute;
     }
 /* ==========================================================================
    Helper classes
@@ -291,8 +288,12 @@ table {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media screen and (max-width: 800px) {
     /* Style adjustments for viewports that meet the condition */
+    td:before {
+    position: absolute;
+    font-size: 1em;
+}
 }
 
 @media print,
