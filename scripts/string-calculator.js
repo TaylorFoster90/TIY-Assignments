@@ -41,11 +41,18 @@ function plus(A, B) {
 }
 it('should add "five" and "five"', function(){
 	assert.equal(plus("five", "five"), 10);
-}); */
+}); 
 
 function plus(A, B) {
 	return 12;
 }
 it('should add "six" and "six"', function() {
 	assert.equal(plus("six", "six"), 12);
+}); */
+
+function plus(A, B){
+	return 14;
+}
+it('should add "seven" and "seven"', function () {
+	assert.equal(plus("seven", "seven"), 14);
 });
