@@ -462,15 +462,20 @@ function isBigEnough(element, index, array) {
 [12, 54, 18, 130, 44].every(isBigEnough); // true
 ````
 
-#### [`Array.prototype.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+#### [`Array.prototype.some()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
 
-* *result:* `unshift()` method excutes a provided function once per array element. 
-* *parameters:* `arr.forEach(callback[, thisArg])` 
-	* `callback` Function that produces an element of the new Array, taking three arguments: `current value` the current element being processed in the array. `index` the index of the current element being processed in the array. `array` the array forEach() was called upon.
+* *result:* `unshift()` method tests whether some element in the array passes the test implemented by the provided funtions 
+* *parameters:* `arr.some(callback[, thisArg])` 
+	* `callback` Function to test for each element, taking three arguments: `current value` the current element being processed in the array. `index` the index of the current element being processed in the array. `array` the array some() was called upon.
 	* `thisArg` optional. Value to use as this when executing callback.
-* *returns:* always retuns the value undefined
-* *example:*
+* *returns:* if element is found, immediatly returns true. Otherwise, returns false
+* *example:* tests whether any element in the array is bigger than 10
 ````
+function isBiggerThan10(element, index, array) {
+  return element > 10;
+}
+[2, 5, 8, 1, 4].some(isBiggerThan10);  // false
+[12, 5, 8, 1, 4].some(isBiggerThan10); // true
 ````
 
 #### [`Array.prototype.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
