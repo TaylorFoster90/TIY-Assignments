@@ -478,6 +478,34 @@ function isBiggerThan10(element, index, array) {
 [12, 5, 8, 1, 4].some(isBiggerThan10); // true
 ````
 
+#### [`Array.prototype.filter()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+
+* *result:* `filter()` method creates a new array with all the elements that pass the test implemented by the provided function. 
+* *parameters:* `arr.filter(callback[, thisArg])` 
+	* `callback` function to test each element of the array. Invoked with arguments(element, index, array). Return true to keep the element, false otherwise.
+	* `thisArg` Optional. Value to use as this when executon callback
+* *returns:* 
+* *example:* uses filter() to create a filtered array that has all elements with values less than 10 removed
+````
+function isBigEnough(element) {
+  return element >= 10;
+}
+var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
+// filtered is [12, 130, 44]
+````
+
+#### [`Array.prototype.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+
+* *result:* `unshift()` method excutes a provided function once per array element. 
+* *parameters:* `arr.forEach(callback[, thisArg])` 
+	* `callback` Function that produces an element of the new Array, taking three arguments: `current value` the current element being processed in the array. `index` the index of the current element being processed in the array. `array` the array forEach() was called upon.
+	* `thisArg` optional. Value to use as this when executing callback.
+* *returns:* always retuns the value undefined
+* *example:*
+````
+
+````
+
 #### [`Array.prototype.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
 * *result:* `unshift()` method excutes a provided function once per array element. 
