@@ -422,3 +422,60 @@ console.log(myArray.length); // will log 4 into console
 * *result:* `unshift()` methods adds one or more elements to the beginning of an array and returns the new length of the array. 
 * *parameters:* `elementN` the elements to add to the front of the array.
 * *returns:* returns the new length property of the object upon which the method was called. 
+
+
+### Iterator Methods 
+
+#### [`Array.prototype.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+
+* *result:* `unshift()` method excutes a provided function once per array element. 
+* *parameters:* `arr.forEach(callback[, thisArg])` 
+	* `callback` Function that produces an element of the new Array, taking three arguments: `current value` the current element being processed in the array. `index` the index of the current element being processed in the array. `array` the array forEach() was called upon.
+	* `thisArg` optional. Value to use as this when executing callback.
+* *returns:* always retuns the value undefined
+* *example:* The following code logs a line for each element in an array
+````
+function logArrayElements(element, index, array) {
+  console.log('a[' + index + '] = ' + element);
+}
+// Note ellision, there is no member at 2 so it isn't visited
+[2, 5, , 9].forEach(logArrayElements);
+// logs:
+// a[0] = 2
+// a[1] = 5
+// a[3] = 9
+````
+
+#### [`Array.prototype.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+
+* *result:* `unshift()` method excutes a provided function once per array element. 
+* *parameters:* `arr.forEach(callback[, thisArg])` 
+	* `callback` Function that produces an element of the new Array, taking three arguments: `current value` the current element being processed in the array. `index` the index of the current element being processed in the array. `array` the array forEach() was called upon.
+	* `thisArg` optional. Value to use as this when executing callback.
+* *returns:* always retuns the value undefined
+* *example:* 
+````
+````
+
+#### [`Array.prototype.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+
+* *result:* `unshift()` method excutes a provided function once per array element. 
+* *parameters:* `arr.forEach(callback[, thisArg])` 
+	* `callback` Function that produces an element of the new Array, taking three arguments: `current value` the current element being processed in the array. `index` the index of the current element being processed in the array. `array` the array forEach() was called upon.
+	* `thisArg` optional. Value to use as this when executing callback.
+* *returns:* always retuns the value undefined
+* *example:*
+````
+````
+
+#### [`Array.prototype.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+
+* *result:* `unshift()` method excutes a provided function once per array element. 
+* *parameters:* `arr.forEach(callback[, thisArg])` 
+	* `callback` Function that produces an element of the new Array, taking three arguments: `current value` the current element being processed in the array. `index` the index of the current element being processed in the array. `array` the array forEach() was called upon.
+	* `thisArg` optional. Value to use as this when executing callback.
+* *returns:* always retuns the value undefined
+* *example:*
+````
+
+````
