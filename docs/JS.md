@@ -360,3 +360,65 @@ return false;
 return x;
 return x + y / 3;
 ````
+
+### Literal: [`Array`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+
+* *symbol:* `[ ]`
+* *pronunciation:* "array", "new array" high-level, list-like objects
+* *examples:*
+````
+[element0, element1,..., elementN]
+new Array(element0, element1[, ...[. elementN]])
+new Array(arrayLength)
+````
+
+#### `Array.length`
+
+* *value:* specifies number of elements in an array
+* *examples:*
+````
+var myArray = ['hello world', 16, 'Taylor Foster', 80]
+console.log(myArray.length); // will log 4 into console
+````
+
+#### [`Array.prototype.pop()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop)
+
+* *result:* the `pop()` method removes the last element from an array and returns that element 
+* *parameters:* intentionally generic and can be called or applied to objects resembling arrays
+* *returns:* returns value of the last element in array to the caller. If called on emtpy array, it returns undefined value.
+
+#### [`Array.prototype.push()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
+
+* *result:* the `push()` method adds one or more elements to the end of an array and returns the new length of the array 
+* *parameters:* intentionally generic. Can be used with `call()` or `apply()` on objects resembling arrays. 
+* *returns:* returns the new length property of the object upon which the method was called.
+
+#### [`Array.prototype.reverse()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse)
+
+* *result:* `reverse()` method reverses an array in place. The first element becomes the last and the last becomes the first.
+* *parameters:* none
+* *returns:* returns a refrence to the array
+
+#### [`Array.prototype.shift()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift)
+
+* *result:* `shift()` method removes the frist element from an array and returns that element. changes length of array
+* *parameters:* intentionally generic. can be called or applied to objects resembling arrays.
+* *returns:* returns the removed value, if length is 0, undefined is returned 
+
+#### [`Array.prototype.sort()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+
+* *result:* `sort()` method sort the elements of an array in place and returns the array. 
+* *parameters:* `compareFunction` this is optional. Specifies a function that defines the sort order. If omitted, the array is sorted according to each character's Unicode code point value, according to the string conversion of each element.
+* *returns:* if `compareFunction` is not supplied, elements are sorted by converting them to strings and comparing strings in UNICODE point order.
+
+#### [`Array.prototype.splice()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice)
+
+* *result:* `splice()` method changes the content of an array by removing existing elements and/or adding new elements.
+* *parameters:* `start` Index at which to start changing the array. `deleteCount` an interger indicating the number of old array elements to remove. `itemN` the element to add to the array
+* *returns:* returns an array containing the deleted elements.
+
+#### [`Array.prototype.unshift()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift)
+
+* *result:* `unshift()` methods adds one or more elements to the beginning of an array and returns the new length of the array. 
+* *parameters:* `elementN` the elements to add to the front of the array.
+* *returns:* returns the new length property of the object upon which the method was called. 

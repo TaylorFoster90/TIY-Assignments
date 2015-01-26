@@ -1,46 +1,61 @@
+var board = [ 
+  ['R','N','B','Q','K','B','N','R'],
+  ['P','P','P','P','P','P','P','P'],
+  [' ',' ',' ',' ',' ',' ',' ',' '],
+  [' ',' ',' ',' ',' ',' ',' ',' '],
+  [' ',' ',' ',' ',' ',' ',' ',' '],
+  [' ',' ',' ',' ',' ',' ',' ',' '],
+  ['p','p','p','p','p','p','p','p'],
+  ['r','n','b','q','k','b','n','r'] ];
 
-var assert = require('assert');
 
-/*function add(A, B){
-	return A + B;
-};
-assert(add);
-assert.equal(add(1,3),4);
-assert.equal(add(4,4),8);
+function print(board) {
+  console.log(board.join('\n') + '\n\n');
+ }
 
-// subtraction // 
-
-function diff(A, B){
-	return A - B;
+function movePawnW(){
+	board[4][3] = board[6][3];
+	board[6][3] = ' ';
 }
-assert(diff);
-assert.equal(diff(4,4),0);
-
-//multiplication//
-
-function prod(A, B){
-	return A * B;
+movePawnW();
+function movePawnW2() {
+	board[4][2] = board[6][2];
+	board[6][2] = ' ';
 }
-
-assert(prod);
-assert.equal(prod(2,7),14);
-
-// division //
-
-function div(A, B){
-	return A / B;
+movePawnW2();
+function moveKnightW(){
+	board[5][5] = board[7][6];
+	board[7][6] = ' ';
 }
-
-assert(div);
-assert.equal(div(8,4),2);
-
-
-assert.equal(prod(3,5),diff(20,5));
-assert.equal(prod(2,10), div(40,2), add(35,5), diff(100,80)); */
-
-function plus(string, string){
-	return 2;
+moveKnightW();
+function movePawnW3() {
+	board[5][6] = board[6][6];
+	board[6][6] = ' ';
 }
-assert(plus("one", "one") === 2);
-
-
+movePawnW3();
+function moveBishopW() {
+	board[6][6] = board[7][5];
+	board[7][5] = ' ';
+}
+moveBishopW();
+function movePawnB(){
+	board[3][3] = board[1][3];
+	board[1][3] = ' ';
+}
+movePawnB();
+function movePawnB2() {
+	board[2][4] = board[1][4];
+	board[1][4] = ' ';
+}
+movePawnB2();
+function moveKnightB() {
+	board[2][5] = board[0][6];
+	board[0][6] = ' ';
+}
+moveKnightB();
+function moveBishopB(){
+	board[1][4] = board[0][5];
+	board[0][5] = ' ';
+}
+moveBishopB();
+print(board);
