@@ -494,16 +494,19 @@ var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
 // filtered is [12, 130, 44]
 ````
 
-#### [`Array.prototype.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+#### [`Array.prototype.reduce()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 
-* *result:* `unshift()` method excutes a provided function once per array element. 
-* *parameters:* `arr.forEach(callback[, thisArg])` 
-	* `callback` Function that produces an element of the new Array, taking three arguments: `current value` the current element being processed in the array. `index` the index of the current element being processed in the array. `array` the array forEach() was called upon.
+* *result:* `reduce()` method applies a function against an accumulator and each valueof the array(from left-to-right) has to reduce it to a single value. 
+* *parameters:* `arr.reduce(callback[, initialValue])` 
+	* `callback` Function to execute on each value in the array, taking four arguments: `previousValue` the value previously returned in the last invocation of the callback or `initialValue` if supplied. `currentValue` the current element being processed in the array. `index` the index of the current element being processed in the array. `array` the array reduce() was called
 	* `thisArg` optional. Value to use as this when executing callback.
-* *returns:* always retuns the value undefined
-* *example:*
+* *returns:*
+* *example:* flatten an array of arrays
 ````
-
+var flattened = [[0, 1], [2, 3], [4, 5]].reduce(function(a, b) {
+  return a.concat(b);
+});
+// flattened is [0, 1, 2, 3, 4, 5]
 ````
 
 #### [`Array.prototype.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
