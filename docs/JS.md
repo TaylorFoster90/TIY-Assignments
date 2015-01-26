@@ -446,15 +446,20 @@ function logArrayElements(element, index, array) {
 // a[3] = 9
 ````
 
-#### [`Array.prototype.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+#### [`Array.prototype.every()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
 
-* *result:* `unshift()` method excutes a provided function once per array element. 
-* *parameters:* `arr.forEach(callback[, thisArg])` 
-	* `callback` Function that produces an element of the new Array, taking three arguments: `current value` the current element being processed in the array. `index` the index of the current element being processed in the array. `array` the array forEach() was called upon.
+* *result:* `every()` tests whether all elements in the array pass the test implemented by the provded function. 
+* *parameters:* `arr.every(callback[, thisArg])` 
+	* `callback` Function to test for each element, taking three arguments: `current value` the current element being processed in the array. `index` the index of the current element being processed in the array. `array` the array every() was called upon.
 	* `thisArg` optional. Value to use as this when executing callback.
-* *returns:* always retuns the value undefined
-* *example:* 
+* *returns:* a Boolean
+* *example:* tests whether all elements in the array are bigger than 10
 ````
+function isBigEnough(element, index, array) {
+  return element >= 10;
+}
+[12, 5, 8, 130, 44].every(isBigEnough);   // false
+[12, 54, 18, 130, 44].every(isBigEnough); // true
 ````
 
 #### [`Array.prototype.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
