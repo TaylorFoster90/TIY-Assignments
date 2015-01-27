@@ -428,7 +428,7 @@ console.log(myArray.length); // will log 4 into console
 
 #### [`Array.prototype.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
-* *result:* `unshift()` method excutes a provided function once per array element. 
+* *result:* `forEach()` method excutes a provided function once per array element. 
 * *parameters:* `arr.forEach(callback[, thisArg])` 
 	* `callback` Function that produces an element of the new Array, taking three arguments: `current value` the current element being processed in the array. `index` the index of the current element being processed in the array. `array` the array forEach() was called upon.
 	* `thisArg` optional. Value to use as this when executing callback.
