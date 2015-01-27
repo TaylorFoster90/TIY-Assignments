@@ -422,3 +422,104 @@ console.log(myArray.length); // will log 4 into console
 * *result:* `unshift()` methods adds one or more elements to the beginning of an array and returns the new length of the array. 
 * *parameters:* `elementN` the elements to add to the front of the array.
 * *returns:* returns the new length property of the object upon which the method was called. 
+
+
+### Iterator Methods 
+
+#### [`Array.prototype.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+
+* *result:* `forEach()` method excutes a provided function once per array element. 
+* *parameters:* `arr.forEach(callback[, thisArg])` 
+	* `callback` Function that produces an element of the new Array, taking three arguments: `current value` the current element being processed in the array. `index` the index of the current element being processed in the array. `array` the array forEach() was called upon.
+	* `thisArg` optional. Value to use as this when executing callback.
+* *returns:* always retuns the value undefined
+* *example:* The following code logs a line for each element in an array
+````
+function logArrayElements(element, index, array) {
+  console.log('a[' + index + '] = ' + element);
+}
+// Note ellision, there is no member at 2 so it isn't visited
+[2, 5, , 9].forEach(logArrayElements);
+// logs:
+// a[0] = 2
+// a[1] = 5
+// a[3] = 9
+````
+
+#### [`Array.prototype.every()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
+
+* *result:* `every()` tests whether all elements in the array pass the test implemented by the provded function. 
+* *parameters:* `arr.every(callback[, thisArg])` 
+	* `callback` Function to test for each element, taking three arguments: `current value` the current element being processed in the array. `index` the index of the current element being processed in the array. `array` the array every() was called upon.
+	* `thisArg` optional. Value to use as this when executing callback.
+* *returns:* a Boolean
+* *example:* tests whether all elements in the array are bigger than 10
+````
+function isBigEnough(element, index, array) {
+  return element >= 10;
+}
+[12, 5, 8, 130, 44].every(isBigEnough);   // false
+[12, 54, 18, 130, 44].every(isBigEnough); // true
+````
+
+#### [`Array.prototype.some()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
+
+* *result:* `unshift()` method tests whether some element in the array passes the test implemented by the provided funtions 
+* *parameters:* `arr.some(callback[, thisArg])` 
+	* `callback` Function to test for each element, taking three arguments: `current value` the current element being processed in the array. `index` the index of the current element being processed in the array. `array` the array some() was called upon.
+	* `thisArg` optional. Value to use as this when executing callback.
+* *returns:* if element is found, immediatly returns true. Otherwise, returns false
+* *example:* tests whether any element in the array is bigger than 10
+````
+function isBiggerThan10(element, index, array) {
+  return element > 10;
+}
+[2, 5, 8, 1, 4].some(isBiggerThan10);  // false
+[12, 5, 8, 1, 4].some(isBiggerThan10); // true
+````
+
+#### [`Array.prototype.filter()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+
+* *result:* `filter()` method creates a new array with all the elements that pass the test implemented by the provided function. 
+* *parameters:* `arr.filter(callback[, thisArg])` 
+	* `callback` function to test each element of the array. Invoked with arguments(element, index, array). Return true to keep the element, false otherwise.
+	* `thisArg` Optional. Value to use as this when executon callback
+* *returns:* 
+* *example:* uses filter() to create a filtered array that has all elements with values less than 10 removed
+````
+function isBigEnough(element) {
+  return element >= 10;
+}
+var filtered = [12, 5, 8, 130, 44].filter(isBigEnough);
+// filtered is [12, 130, 44]
+````
+
+#### [`Array.prototype.reduce()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+
+* *result:* `reduce()` method applies a function against an accumulator and each valueof the array(from left-to-right) has to reduce it to a single value. 
+* *parameters:* `arr.reduce(callback[, initialValue])` 
+	* `callback` Function to execute on each value in the array, taking four arguments: `previousValue` the value previously returned in the last invocation of the callback or `initialValue` if supplied. `currentValue` the current element being processed in the array. `index` the index of the current element being processed in the array. `array` the array reduce() was called
+	* `initialValue` Optional. Object to use as the first argument to the first call of the callback.
+* *returns:*
+* *example:* flatten an array of arrays
+````
+var flattened = [[0, 1], [2, 3], [4, 5]].reduce(function(a, b) {
+  return a.concat(b);
+});
+// flattened is [0, 1, 2, 3, 4, 5]
+````
+
+#### [`Array.prototype.reduceRight()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduceRight)
+
+* *result:* `reduceRight()` applies a function agaisnt an accumulator and each value of the array (from right-to-left) has to reduce it to a single value.
+* *parameters:* `arr.reduceRight(callback[, initialValue])` 
+	* `callback` Function to execute in the array, taking four arguments: `previousValue` the value previously returned in the last invocation of the callback or `initialValue` if supplied. `currentValue` the current element being processed in the array. `index` the index of the current element being processed in the array. `array` the array reduce() was called
+	* `initialValue` optional. Object to use as the first argument to the firdt call of the callback.
+* *returns:* 
+* *example:* flatten an array of arrays
+````
+var flattened = [[0, 1], [2, 3], [4, 5]].reduceRight(function(a, b) {
+    return a.concat(b);
+}, []);
+// flattened is [4, 5, 2, 3, 0, 1]
+````

@@ -1,5 +1,13 @@
 var assert = require('assert');
 
+var numbers = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18];
+function check(n){
+	return numbers[n];
+}
+function plus(a) {
+	if(a == check
+}
+
 /*function plus(A, B) {
     return 0;
 }
