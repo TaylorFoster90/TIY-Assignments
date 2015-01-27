@@ -8,5 +8,13 @@ function toEnglish(a) {
 }
 
 it('should take a number and make it a string', function(){
-	assert(toEnglish(0), "zero")
-})
+	assert.equal(toEnglish(0), "zero")
+});
+
+it('should take a number and make it a string', function(){
+	assert.equal(toEnglish(5), "five")
+});
+
+it('should take a number and make it a string', function (){
+	assert.equal(toEnglish(10), "ten")
+});
