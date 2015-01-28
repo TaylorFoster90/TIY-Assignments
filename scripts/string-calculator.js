@@ -1,87 +1,26 @@
 var assert = require('assert');
 
-var numbers = [0, 2, 4, 6, 8, 10, 12, 14, 16, 18];
-function check(n){
-	return numbers[n];
+var num = {
+	'zero': 0,
+	'one': 1,
+	'two': 2,
+	'three': 3,
+	'four': 4,
+	'five': 5,
+	'six': 6,
+	'seven': 7,
+	'eight': 8,
+	'nine': 9,
+	'ten': 10
 }
-function plus(a) {
-	if(a == check
-}
-
-/*function plus(A, B) {
-    return 0;
-}
-it('should add "zero" and "zero"', function() {
-    assert.equal(plus("zero", "zero"), 0);
-});
-
-/*function plus(A, B) {
-    return 2;
+function key(n){
+	return num[n];
 }
 
-it('should add "one" and "one"', function() {
-    assert.equal(plus("one", "one"), 2);
-}); 
-
-function plus(A, B) {
-	return 4;
+function add(A,B){
+	console.log(key(A) + key(B));
+	return key(A) + key(B);
 }
-it('should add "two" and "two"', function(){
-	assert.equal(plus("two", "two"), 4);
-}); 
 
-function plus(A, B) {
-	return 6;
-}
-it('should add "three" and "three"', function() {
-	assert.equal (plus("three", "three"), 6);
-}); 
+add('three','one');
 
-function plus(A, B) {
-	return 8;
-}
-it('should add "four" and "four"', function(){
-	assert.equal(plus("four", "four"), 8);
-}); 
-
-function plus(A, B) {
-	return 10;
-}
-it('should add "five" and "five"', function(){
-	assert.equal(plus("five", "five"), 10);
-}); 
-
-function plus(A, B) {
-	return 12;
-}
-it('should add "six" and "six"', function() {
-	assert.equal(plus("six", "six"), 12);
-}); 
-
-function plus(A, B){
-	return 14;
-}
-it('should add "seven" and "seven"', function () {
-	assert.equal(plus("seven", "seven"), 14);
-}); 
-
-function plus(A, B){
-	return 16;
-}
-it('should add "eight" and "eight"', function(){
-	assert.equal(plus("eight", "eight"), 16);
-}); 
-
-function plus(A, B){
-	return 18;
-}
-it('should add "nine" and "nine"', function(){
-	assert.equal(plus("nine", "nine"), 18);
-}); */
-
-function plus(A, B) {
-	return 20;
-}
-it('should add "ten" and "ten"', function (){
-	assert.equal(plus("ten", "ten"), 20);
-});
