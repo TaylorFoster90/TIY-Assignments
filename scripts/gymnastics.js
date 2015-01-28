@@ -6,14 +6,17 @@ function answer(){
 		return item.type == "PushEvent";
 
 	});
-	var days = events.filter(function(item){
-		return item.type == "updated_at";
-	});
+	var otherEvents = events.filter(function(item){
+		return item.type != "PushEvent";
+	})
+
 	return {
 		'total': events.length,
 		'PushEvent': {
 			'total': pushEvents.length
-
+		},
+		'other': {
+			'total': otherEvents.length
 		}
 	}
 }
@@ -29,6 +32,9 @@ it('should return answer exists', function() {
 
 it('should return the length of events', function() {
 	assert.equal(theAnswer.total, 30);
+});
+it('should show the other otherEvents is 17', function(){
+	assert.equal(answer(otherEvents), 17)
 });
 it('should have PushEvent', function() {
 	assert(theAnswer.PushEvent);
