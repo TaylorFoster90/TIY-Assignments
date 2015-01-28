@@ -11,7 +11,6 @@ function answer(){
 	})
 
 	return {
-		'total': events.length,
 		'PushEvent': {
 			'total': pushEvents.length
 		},
@@ -34,7 +33,7 @@ it('should return the length of events', function() {
 	assert.equal(theAnswer.total, 30);
 });
 it('should show the other otherEvents is 17', function(){
-	assert.equal(answer(other.length), 17)
+	assert.equal(answer, 17)
 });
 
 it('should have PushEvent', function() {
