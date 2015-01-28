@@ -1,0 +1,25 @@
+{
+  "name": "TIY-Assignments",
+  "version": "1.0.0",
+  "description": "TIY Assignments for FEE Spring 2015 The Iron Yard Orlando",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TaylorFoster90/TIY-Assignments"
+  },
+  "author": "Taylor Foster <tagfoster90@gmail.com>",
+  "license": "CC0",
+  "bugs": {
+    "url": "https://github.com/TaylorFoster90/TIY-Assignments/issues"
+  },
+  "homepage": "https://github.com/TaylorFoster90/TIY-Assignments",
+  "dependencies": {
+    "lodash": "^3.0.0"
+  }
+}
