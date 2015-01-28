@@ -43,4 +43,4 @@ it('should add "three" and "eight" and equal 11', function(){
 
 it('should add "six" and "nine" and equal 15', function(){
 	assert.equal(add("six", "nine"), 15)
-})
+});
