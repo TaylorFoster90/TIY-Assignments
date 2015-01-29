@@ -97,6 +97,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+
+
 table {
     width: 90%;
 }
@@ -181,6 +183,25 @@ td:before {
     .white.pawn:before {
         content: "\2659";
     }
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    /* Style adjustments for viewports that meet the condition */
+    td:before {
+    position: absolute;
+    font-size: 1em;
+}
+}
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -288,12 +309,8 @@ td:before {
    Modify as content requires.
    ========================================================================== */
 
-@media screen and (max-width: 800px) {
+@media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
-    td:before {
-    position: absolute;
-    font-size: 1em;
-}
 }
 
 @media print,
