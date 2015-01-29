@@ -1,9 +1,6 @@
 var _ = require('lodash');
 function print(board){
   // Before any rows are printed, print the `<table>`...
-  console.log('<table class="chessboard">');
-
-  _.forEach(board, function(row, rank){
 
       // Before any cells are printed...
 
@@ -20,3 +17,6 @@ function print(board){
   // After all the rows are printed...
   console.log('</table> <!-- .chessboard -->');
 } // END print
+
+
+print();
