@@ -41,4 +41,20 @@ it('shold have some perDay stats', function(){
 	console.log(first.created_at.slice(8,10));
 	assert(last.created_at);
 	console.log(last.created_at.slice(8,10));
+
+	console.log(
+		_(events)
+			.pluck('created_at')
+			.map(function(date){
+				return date.slice(0,10);
+			})
+			.uniq()
+			.value();
+		);
+
+
+
+
+
+
 });
