@@ -1,23 +1,24 @@
-var _ = require('lodash');
-function print(board){
-  // Before any rows are printed, print the `<table>`...
+
+// function print(board){
+//   // Before any rows are printed, print the `<table>`...
   
 
-      // Before any cells are printed...
+//       // Before any cells are printed...
 
-      _.forEach(row, function(square, file){
+//       _.forEach(row, function(square, file){
 
-          // In here, we have `rank`, `file`, and `square`...
+//           // In here, we have `rank`, `file`, and `square`...
 
-      }); // END foreach(row)
+//       }); // END foreach(row)
 
-      // After all the cells are printed...
+//       // After all the cells are printed...
 
-  }); // END foreach(board)
+//   }); // END foreach(board)
 
-  // After all the rows are printed...
-  console.log('</table> <!-- .chessboard -->');
-} // END print
+//   // After all the rows are printed...
+//   console.log('</table> <!-- .chessboard -->');
+// } // END print
 
 
-print();
+// print();
+
