@@ -96,18 +96,62 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+#container {
+    width: 80%;
+    margin: 0 auto;
+}
 
+h2 {
+    border-bottom: 1px solid grey;
+    padding-bottom: 1ex;
+}
+h2 {
+    border-bottom: 1px solid grey;
+    padding-bottom: 1ex;
+}
+h2 > a, h3 > a {
+    text-decoration: none;
+    color: lightblue;
+}
 
+h2 > a:before {
+    content: "\2799";
+    color:grey;
+    display: inline-block;
+    padding-right: .5em;
+    width: 1em;
+}
+h2 > a:hover:before {
+    content: "\2798";
+    color: lightblue;
+    display: inline-block;
+    padding-right: .5em;
+    width: 1em;
+}
+article {
+    display: none;
+}
+article h3, article article {
+    width: 95%;
+    margin: 0 auto;
+}
+article h3:before{
+    content: "\2799";
+    color: grey;
+    display: inline-block;
+    padding-right: .5em;
+    width: 1em;
+}
+article h3:hover:before {
+    content: "\2798";
+    padding-right: .5em;
+    display: inline-block;
+    width: 1em;
 
-
-
-
-
-
-
-
-
-
+}
+.open {
+    display: block;
+}   
 
 
 
