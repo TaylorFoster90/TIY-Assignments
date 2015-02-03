@@ -96,10 +96,35 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+ul{
+    list-style: none;
+    position: relative;
+    border-bottom:1px solid blue;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+li{
+    font-size: 2em;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 5%;
+    border:1px solid blue;
+}
+li a {
+    color: lightblue;
+    text-decoration: none;
+}
+#container > article {
+    text-align: center;
+    padding-top: 5%;
+    position: absolute;
 
-
-
-
+}
+#sectionTwo {
+    display: none;
+}
 
 
 
