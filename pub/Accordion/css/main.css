@@ -128,6 +128,7 @@ h2 > a:hover:before {
     padding-right: .5em;
     width: 1em;
 }
+
 article {
     display: none;
 }
@@ -147,7 +148,7 @@ article h3:hover:before {
     padding-right: .5em;
     display: inline-block;
     width: 1em;
-
+    color: lightblue;
 }
 .open {
     display: block;
