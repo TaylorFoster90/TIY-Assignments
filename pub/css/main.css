@@ -99,103 +99,14 @@ textarea {
 
 
 
-table {
-    width: 90%;
-}
-
-    thead th {
-        border-bottom: 1px solid black;
-    }
-    tbody th {
-        border-right: 1px solid black;
-        text-align: right;
-    }
-    tbody td {
-        width: 10%;
-        padding-bottom: 10%;
-        border: 1px solid black;
-        position: relative;
-    }
-    tbody :nth-child(even) td:nth-child(even),
-    tbody :nth-child(odd) td:nth-child(odd){
-        background-color: violet;
-    }
-/*Chess Pieces*/
-td:before {
-    position: absolute;
-    font-size: 2em;
-}
-{
-    background-color: green
-}
-
-
-/*Black Pieces*/
-
-/*Rooks*/ 
-    .black.rook:before {
-        content:"\265C";
-    }
-/*knights*/
-    .black.knight:before {
-        content: "\265E";
-    }
-/*bishops*/
-    .black.bishop:before {
-        content: "\265D";
-    }
-/*Queen*/
-    .black.queen:before {
-        content: "\265B";
-    }
-/*king*/
-    .black.king:before {
-        content: "\265A";
-    }
-/* pons */
-   .black.pawn:before {
-        content: "\265F"
-    }
-
-/* white pieces */
-
-/* rooks */
-    .white.rook:before {
-        content: "\2656";
-    }
-/*knights*/
-    .white.knight:before {
-        content:"\2658";
-    }
-/*bishops*/
-    .white.bishop:before {
-        content: "\2657";
-    }
-/*queen*/
-    .white.queen:before {
-        content: "\2655" ;
-    }
-/*king*/
-    .white.king:before {
-        content: "\2654";
-    }
-/*pawns*/
-    .white.pawn:before {
-        content: "\2659";
-    }
 
 
 
 
 
 
-@media screen and (max-width: 800px) {
-    /* Style adjustments for viewports that meet the condition */
-    td:before {
-    position: absolute;
-    font-size: 1em;
-}
-}
+
+
 
 
 
