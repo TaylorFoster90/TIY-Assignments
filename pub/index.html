@@ -11,7 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -22,9 +23,10 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <aside>
+        <div class="container"> 
+        <aside class="col-md-4">
           <figure>
-            <img src="">
+            <img src="http://lorempixel.com/200/400">
             <figcaption>The Octocat</figcaption>
           </figure>
           <ul>
@@ -47,11 +49,49 @@
               <strong>6</strong>
               <span>Following</span>
             </a>
-            <nav>
-              <a href="#">Contributions</a>
-              <a href="#">Respositories</a>
-              <a href="#">Public Activity</a>
-            </nav>
+            </aside>
+            <div role="tabpanel" class="col-md-8">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#contributions" data-toggle="tab">Contributions</a></li>
+              <li><a href="#respositories" data-toggle="tab">Respositories</a></li>
+              <li><a href="#cont" date-toggle="tab">Public Activity</a></li>
+            </ul>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane active">
+                <ul class="col-md-8 repos" id="contributions">
+                  <li>
+                    <strong><a href="#"><span class="glyphicon glyphicon-book"></span>Spoon-Knife</a></strong>
+                    <small>This repo if for demonstration purposes only</small>
+                    <p class="fa fa-star">9,733</p>
+                  </li>
+                  <li>
+                    <strong><a href="#"><span class="glyphicon glyphicon-book"></span>Hello-World</a></strong>
+                    <small>This your first repo</small>
+                    <p class="fa fa-star">1,404</p>
+                  </li>
+                  <li>
+                    <strong><a href="#"><span class="glyphicon glyphicon-book"></span>hello-world</a></strong>
+                    <small>My first repo on github</small>
+                    <p class="fa fa-star">8</p>
+                  </li>
+                  <li>
+                    <strong><a href="#"><span class="glyphicon glyphicon-book"></span>octocat.github.io</a></strong>
+                    <p class="fa fa-star">6</p>
+                  </li>
+                  <li>
+                    <strong><a href="#"><span class="glyphicon glyphicon-book"></span>git-consortium</a></strong>
+                    <small>This repo if for demonstration purposes only</small>
+                    <p class="fa fa-star">4</p>
+                  </li>
+                </ul>
+            </div>
+               <div class="tab-pane" id="respositories">
+                <p>hfdisashafhsdalfhasfhjaj</p>
+              </div>
+            </div>
+          </div>
+
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
