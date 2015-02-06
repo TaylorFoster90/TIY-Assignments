@@ -99,6 +99,9 @@ textarea {
 .container{
     margin-top: 6em;
 }
+.nav li {
+    font-size: 1.3em;
+}
 .repos {
     list-style: none;
     border:1px solid grey;
@@ -109,7 +112,7 @@ textarea {
     position: relative;
     display: block;
     border-bottom:1px solid grey;
-    padding:1% 2% 3% 1%;
+    padding:1% 2% 2% 1%;
 }
 #pop {
     background-color: #dddddd;
@@ -129,24 +132,17 @@ aside li:before{
     color: grey;
 }
 
-.followers a {
-    display: block; 
-}
 figure span{
     display: block;
     font-weight: bold;
     font-size: 2em;
 }
 .repos p {
-    float: right;
+    position: absolute;
+    right: 2px;
     color: #7b7b7b;
 }
 
-.repos small {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
 li span {
     margin-right: 3px;
 }
@@ -176,6 +172,10 @@ li span {
     box-shadow: 1px 1px 5px #cdcdcd inset;
 
 }
+.stat-icons {
+    float: right;
+    color: #b4b4b4;
+}
 #b-tab span {
 
 }
@@ -184,16 +184,14 @@ li span {
 }
 textarea {
     margin-top: 2em;
-    width: 50%;
+    width: 80%;
     background-color: #f1f1f1;
     border: 1px solid black;
 }
 textarea:focus{
     background-color: white;
 }
-#comments{
-    display: inline;
-}
+
 .comment-button {
     margin-top: .3em;
     margin-bottom: 3em;
@@ -205,6 +203,19 @@ textarea:focus{
     font-weight: bold;
     border-color: white;
     box-shadow: 2px 2px 2px #328f05 inset;
+}
+.followers{
+    position: relative;
+    
+}
+.followers strong {
+    font-size: 2em;
+}
+.followers a {
+    display: inline-block;
+    float: left;
+    margin-left: .5em;
+    text-align: center;
 }
 
 
