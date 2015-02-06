@@ -53,7 +53,7 @@
             </aside>
             <div class="col-md-9">
             <ul class="nav nav-tabs">
-              <li class="active"><a href="#a" data-toggle="tab">Contributions</a></li>
+              <li class="active "><a href="#a" class="fa fa-plus-square-o" data-toggle="tab">  Contributions</a></li>
               <li><a href="#b" data-toggle="tab">Respositories</a></li>
             </ul>
             </div>
@@ -81,6 +81,7 @@
                     <p class="fa fa-star">6</p>
                   </li>
                   <li>
+                 
                     <strong><a href="#"><span class="glyphicon glyphicon-book"></span>git-consortium</a></strong>
                     <small>This repo if for demonstration purposes only</small>
                     <p class="fa fa-star">4</p>
@@ -88,8 +89,8 @@
                 </ul>
             </div>
                <div class="tab-pane" id="b">
-               <input type="text"><button type="button">Search</button>
-               <ul>
+               <input type="text" placeholder="find a respository..." style="height:2.5em; width: 30%; margin-top: 1em; margin-right:.5em;"><button type="button">Search</button>
+               <ul class="col-md-8" id="b-tab">
                 <li>
                   <h3><a href="#">Spoon-Knife</a></h3>
                   <p>
@@ -128,6 +129,15 @@
               </div>
             </div>
           </div>
+              <div id="container">
+                <div class="col-md-offset-4">
+                <textarea placeholder="please leave a comment..." rows="6"></textarea>
+              </div>
+              <button type="button" class="col-md-offset-4 comment-button">Comment</button>
+            </div>
+            <div class="row">  
+            </div>
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>

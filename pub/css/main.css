@@ -137,12 +137,12 @@ figure span{
     font-weight: bold;
     font-size: 2em;
 }
-li p {
+.repos p {
     float: right;
     color: #7b7b7b;
 }
 
-li small {
+.repos small {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -150,10 +150,62 @@ li small {
 li span {
     margin-right: 3px;
 }
+#b-tab {
+    list-style: none;
+}
+#b-tab li{
+    border-bottom: 1px solid #d4d4d4;
 
+}
+#b-tab h3{
+    font-size: 1.5em;
+    font-weight: bold;
 
+}
+#b-tab address {
+    color: #a4a4a4;
+    font-style: italic;
 
+}
+#b button {
+    height: 2.5em;
+    border-radius: 2px;
+    background-color: white;
+    width: 5em;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px #cdcdcd inset;
 
+}
+#b-tab span {
+
+}
+#b-tab p {
+
+}
+textarea {
+    margin-top: 2em;
+    width: 50%;
+    background-color: #f1f1f1;
+    border: 1px solid black;
+}
+textarea:focus{
+    background-color: white;
+}
+#comments{
+    display: inline;
+}
+.comment-button {
+    margin-top: .3em;
+    margin-bottom: 3em;
+    height: 2.5em;
+    border-radius: 5px;
+    width: 8em;
+    background-color: #45c007;
+    color: white;
+    font-weight: bold;
+    border-color: white;
+    box-shadow: 2px 2px 2px #328f05 inset;
+}
 
 
 
