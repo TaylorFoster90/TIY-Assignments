@@ -96,9 +96,9 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.container{
-    margin-top: 6em;
-}
+
+
+
 .nav li {
     font-size: 1.3em;
 }
@@ -132,7 +132,7 @@ aside li:before{
     color: grey;
 }
 
-figure span{
+figcaption {
     display: block;
     font-weight: bold;
     font-size: 2em;
@@ -203,19 +203,6 @@ textarea:focus{
     font-weight: bold;
     border-color: white;
     box-shadow: 2px 2px 2px #328f05 inset;
-}
-.followers{
-    position: relative;
-    
-}
-.followers strong {
-    font-size: 2em;
-}
-.followers a {
-    display: inline-block;
-    float: left;
-    margin-left: .5em;
-    text-align: center;
 }
 
 
