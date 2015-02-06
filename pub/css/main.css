@@ -103,24 +103,49 @@ textarea {
     list-style: none;
     border:1px solid grey;
     padding:0;
+    border-radius: .2em;
 }
 .repos > li {
     position: relative;
     display: block;
-    border:1px solid grey;
-    padding:0 2% 5% 1%;
+    border-bottom:1px solid grey;
+    padding:1% 2% 3% 1%;
+}
+#pop {
+    background-color: #dddddd;
+    padding: .3% 0;
+    font-weight: bold;
+}
+aside ul {
+    padding:0;
+    list-style: none;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+aside li{
+    padding: .5em 0;
+}
+aside li:before{
+    color: grey;
+}
+
+.followers a {
+    display: block; 
+}
+figure span{
+    display: block;
+    font-weight: bold;
+    font-size: 2em;
 }
 li p {
-    position: absolute;
-    right: 0;
-    bottom: 1em;
+    float: right;
+    color: #7b7b7b;
 }
 
 li small {
     position: absolute;
     bottom: 0;
     left: 0;
-    line-height: 4em; 
 }
 li span {
     margin-right: 3px;

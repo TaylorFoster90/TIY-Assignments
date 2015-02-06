@@ -24,19 +24,19 @@
 
         <!-- Add your site or application content here -->
         <div class="container"> 
-        <aside class="col-md-4">
+        <aside class="col-md-3">
           <figure>
-            <img src="http://lorempixel.com/200/400">
-            <figcaption>The Octocat</figcaption>
+            <img src="https://octodex.github.com/images/daftpunktocat-guy.gif" style="height:230px; width=230px">
+            <span>The Daftcat</span>
           </figure>
           <ul>
-            <li>Github</li>
+            <li class="fa fa-users">  Github</li>
             <li>San Francisco</li>
-            <li><a href="#">octocat@github.com</a></li>
-            <li><a href="http://www.github.com/blog">http://www.github.com/blog</a></li>
-            <li>Joined on Jan 25,2011</li>
+            <li class="fa fa-envelope-o"><a href="#">  octocat@github.com</a></li>
+            <li class="fa fa-globe"><a href="http://www.github.com/blog">  http://www.github.com/blog</a></li>
+            <li class="fa fa-clock-o">  Joined on Jan 25,2011</li>
           </ul>
-          <div>
+            <div class="followers">
             <a href="#">
               <strong>884</strong>
               <span>Followers</span>
@@ -49,17 +49,18 @@
               <strong>6</strong>
               <span>Following</span>
             </a>
+            </div>
             </aside>
-            <div role="tabpanel" class="col-md-8">
+            <div class="col-md-9">
             <ul class="nav nav-tabs">
-              <li class="active"><a href="#contributions" data-toggle="tab">Contributions</a></li>
-              <li><a href="#respositories" data-toggle="tab">Respositories</a></li>
-              <li><a href="#cont" date-toggle="tab">Public Activity</a></li>
+              <li class="active"><a href="#a" data-toggle="tab">Contributions</a></li>
+              <li><a href="#b" data-toggle="tab">Respositories</a></li>
             </ul>
             </div>
             <div class="tab-content">
-              <div class="tab-pane active">
-                <ul class="col-md-8 repos" id="contributions">
+              <div class="tab-pane active" id="a">
+                <ul class="col-md-8 repos">
+                  <li id="pop">Popular Respositories</li>
                   <li>
                     <strong><a href="#"><span class="glyphicon glyphicon-book"></span>Spoon-Knife</a></strong>
                     <small>This repo if for demonstration purposes only</small>
@@ -86,7 +87,7 @@
                   </li>
                 </ul>
             </div>
-               <div class="tab-pane" id="respositories">
+               <div class="tab-pane" id="b">
                 <p>hfdisashafhsdalfhasfhjaj</p>
               </div>
             </div>
