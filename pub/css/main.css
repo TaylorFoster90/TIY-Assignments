@@ -119,11 +119,16 @@ textarea {
     padding: .3% 0;
     font-weight: bold;
 }
+aside {
+    text-align: center;
+}
+
 aside ul {
     padding:0;
     list-style: none;
     border-top: 1px solid #dbdbdb;
     border-bottom: 1px solid #dbdbdb;
+    text-align: left;
 }
 aside li{
     padding: .5em 0;
@@ -131,7 +136,14 @@ aside li{
 aside li:before{
     color: grey;
 }
-
+aside p{
+    display: inline-block;
+    text-align: center;
+}
+aside p::first-line{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
 figcaption {
     display: block;
     font-weight: bold;
@@ -187,6 +199,7 @@ textarea {
     width: 80%;
     background-color: #f1f1f1;
     border: 1px solid black;
+    margin: 0 auto;
 }
 textarea:focus{
     background-color: white;
@@ -202,7 +215,7 @@ textarea:focus{
     color: white;
     font-weight: bold;
     border-color: white;
-    box-shadow: 2px 2px 2px #328f05 inset;
+    box-shadow: 2px 2px 2px #328f05;
 }
 
 
