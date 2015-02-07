@@ -148,15 +148,10 @@
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script>
-        var octocat;
-          var promise = $.get('http://api.github.com/users/octocat', function (data) {
-            console.log('done!', data.login);
-            octocat = data;
-          });
-          console.log(octocat);
-          promise.done(function(data){
-            console.log(data);
-          })
+        var users = $.get("https://api.github.com/users/octocat?acess_token==c4645db4250146041ac0325c731cb4167a61a2d7", function(data){
+          console.log(data)
+        });
+        
         </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
