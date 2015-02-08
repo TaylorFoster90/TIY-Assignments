@@ -1,5 +1,4 @@
-$(document).ready(function(){
-	$.get('../apis/github/users/octocat.json', function (data){
-		console.log(data)
-	});
+var users = jQuery.get('octocat.json', function (data) {
+    console.log(data);
 });
+ users;
