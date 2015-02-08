@@ -1,8 +1,5 @@
-(function (window) {
-		'use strict';
-		$(document).ready(function(){
-			$.getJSON('../apis/github/users/octocat.json', function(json){
-				console.log(json.login);
-			});
-		});
-})(window);
+$(document).ready(function(){
+	$.get('../apis/github/users/octocat.json', function (data){
+		console.log(data)
+	});
+});
