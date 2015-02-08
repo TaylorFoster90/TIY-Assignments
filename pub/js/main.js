@@ -1,4 +1,6 @@
-var users = jQuery.get('octocat.json', function (data) {
-    console.log(data);
+$('document').ready(function() {
+$.getJSON('octocat.json', function(quack) {
+    var users = quack;
+    console.log(quack);
 });
- users;
+});
