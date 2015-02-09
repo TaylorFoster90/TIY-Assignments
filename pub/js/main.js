@@ -10,7 +10,9 @@ jQuery.getJSON('/octocat.json', function(json) {
     $('#website').html(user.blog);
     $('#company').html(user.company);
     $('#joined').html(user.created_at);
-    $('#avatar').html('<img src="'+user.avatar_url+'" >').css("height", "230px", "width", "230px");
+    $('aside').prepend('<img src="'+user.avatar_url+'" id="avatar" >');
+    $('#followers').html(user.followers + '<br> Followers');
+    $('#following').html(user.following + '<br> Following');
     console.log('mic check 1 2');
    });
 });
