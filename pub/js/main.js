@@ -1,6 +1,8 @@
-$('document').ready(function() {
-$.getJSON('octocat.json', function(quack) {
-    var users = quack;
-    console.log(users);
-});
+//var users = $.getJSON('https://api.github.com/users/octocat', function(data) {
+//    return data;
+//});
+//console.log(users);
+
+$.('button').on('click', function() {
+    alert('is this working');
 });
