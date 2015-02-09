@@ -2,7 +2,3 @@
 //    return data;
 //});
 //console.log(users);
-
-$.('button').on('click', function() {
-    alert('is this working');
-});
