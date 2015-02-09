@@ -2,15 +2,16 @@
     'use strict';
 jQuery(document).ready(function() {
     
-alert('another');   
-console.log('what');
-    
 jQuery.getJSON('/octocat.json', function(json) {
     var user = json;
-    $.('#login').html(user.login); //why the fuck wont this work
-//    console.log(user.login);
-//    alert(user); 
-//    alert('anything');
+    $('#login').html(user.login);
+    $('#email').html(user.email);
+    $('#location').html(user.location);
+    $('#website').html(user.blog);
+    $('#company').html(user.company);
+    $('#joined').html(user.created_at);
+    $('#avatar').html('<img src="'+user.avatar_url+'" >').css("height", "230px", "width", "230px");
+    console.log('mic check 1 2');
    });
 });
 
