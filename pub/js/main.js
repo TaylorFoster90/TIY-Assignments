@@ -2,6 +2,10 @@
     'use strict';
 jQuery(document).ready(function() {
     
+var userData = $.getJSON("https://apis.github.com/users/octocat");
+userData.done(function(json) {
+    var user = json;
+    
 jQuery.getJSON('/octocat.json', function(json) {
     var user = json;
     $('#login').html(user.login);
@@ -14,9 +18,12 @@ jQuery.getJSON('/octocat.json', function(json) {
     $('#followers').html(user.followers + '<br> Followers');
     $('#following').html(user.following + '<br> Following');
     console.log('mic check 1 2');
-    
-    var userRepos = user.repos_url;
-    console.log(userRepos);
+
+('.tabs a[href="#b"]').on('click' function(){
+    userData.done( function(user) {
+        $.getJSON(user.repos_url).done(function(repos){
+        };
+    });
 })
 });
 })(window);
