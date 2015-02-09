@@ -96,39 +96,131 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.container{
-    margin-top: 6em;
+
+
+
+.nav li {
+    font-size: 1.3em;
 }
 .repos {
     list-style: none;
     border:1px solid grey;
     padding:0;
+    border-radius: .2em;
 }
 .repos > li {
     position: relative;
     display: block;
-    border:1px solid grey;
-    padding:0 2% 5% 1%;
+    border-bottom:1px solid grey;
+    padding:1% 2% 2% 1%;
 }
-li p {
-    position: absolute;
-    right: 0;
-    bottom: 1em;
+#pop {
+    background-color: #dddddd;
+    padding: .3% 0;
+    font-weight: bold;
+}
+aside {
+    text-align: center;
+}
+#avatar {
+    height: 230px;
+    width:230px;
 }
 
-li small {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    line-height: 4em; 
+aside ul {
+    padding:0;
+    list-style: none;
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+    text-align: left;
 }
+aside li{
+    padding: .5em 0;
+}
+aside li:before{
+    color: grey;
+}
+aside p{
+    display: inline-block;
+    text-align: center;
+}
+aside p::first-line{
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+figcaption {
+    display: block;
+    font-weight: bold;
+    font-size: 2em;
+}
+.repos p {
+    position: absolute;
+    right: 2px;
+    color: #7b7b7b;
+}
+
 li span {
     margin-right: 3px;
 }
+#b-tab {
+    list-style: none;
+}
+#b-tab li{
+    border-bottom: 1px solid #d4d4d4;
 
+}
+#b-tab h3{
+    font-size: 1.5em;
+    font-weight: bold;
 
+}
+#b-tab address {
+    color: #a4a4a4;
+    font-style: italic;
 
+}
+#b button {
+    height: 2.5em;
+    border-radius: 2px;
+    background-color: white;
+    width: 5em;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px #cdcdcd inset;
 
+}
+.stat-icons {
+    float: right;
+    color: #b4b4b4;
+}
+#b-tab span {
+
+}
+#b-tab p {
+
+}
+textarea {
+    margin-top: 2em;
+    width: 80%;
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    margin: 0 auto;
+}
+textarea:focus{
+    background-color: white;
+}
+
+#comment-button {
+    margin-top: .3em;
+    margin-bottom: 3em;
+    height: 2.5em;
+    border-radius: 5px;
+    width: 8em;
+    background-color: #45c007;
+    color: white;
+    font-weight: bold;
+    border-color: white;
+    box-shadow: 2px 2px 2px #328f05;
+}
 
 
 
