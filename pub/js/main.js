@@ -14,7 +14,9 @@ jQuery.getJSON('/octocat.json', function(json) {
     $('#followers').html(user.followers + '<br> Followers');
     $('#following').html(user.following + '<br> Following');
     console.log('mic check 1 2');
-   });
+    
+    var userRepos = user.repos_url;
+    console.log(userRepos);
+})
 });
-
 })(window);
