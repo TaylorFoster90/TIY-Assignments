@@ -1,9 +1,10 @@
-//going to fool around with some constructors non related to chess, just a warm up 
+function piece(piece,row,rank){
+	this.piece = piece;
+	this.row = row;
+	this.rank = rank;
+}
 
-function Person(name){
-	this.name = name; 
-}; 
+var pawn = new piece('pawn', 'E', '8');
 
-var taylor = new Person('Taylor');
 
-console.log(taylor instanceof Person);
+console.log(pawn)
