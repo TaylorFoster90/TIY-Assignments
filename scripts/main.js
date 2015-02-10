@@ -1,24 +1,46 @@
 
-// function print(board){
-//   // Before any rows are printed, print the `<table>`...
-  
+var assert = require('assert');
 
-//       // Before any cells are printed...
+/*function add(A, B){
+	return A + B;
+};
+assert(add);
+assert.equal(add(1,3),4);
+assert.equal(add(4,4),8);
 
-//       _.forEach(row, function(square, file){
+// subtraction // 
 
-//           // In here, we have `rank`, `file`, and `square`...
+function diff(A, B){
+	return A - B;
+}
+assert(diff);
+assert.equal(diff(4,4),0);
 
-//       }); // END foreach(row)
+//multiplication//
 
-//       // After all the cells are printed...
+function prod(A, B){
+	return A * B;
+}
 
-//   }); // END foreach(board)
+assert(prod);
+assert.equal(prod(2,7),14);
 
-//   // After all the rows are printed...
-//   console.log('</table> <!-- .chessboard -->');
-// } // END print
+// division //
+
+function div(A, B){
+	return A / B;
+}
+
+assert(div);
+assert.equal(div(8,4),2);
 
 
-// print();
+assert.equal(prod(3,5),diff(20,5));
+assert.equal(prod(2,10), div(40,2), add(35,5), diff(100,80)); */
+
+function plus(string, string){
+	return 2;
+}
+assert(plus("one", "one") === 2);
+
 

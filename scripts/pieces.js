@@ -15,21 +15,31 @@ Piece.prototype = {
 		return this._name;
 	},
 	getAbbrev: function(){
-		return this._name.substring(0,1);
+		//This function returns 'black' pieces to upperCase and 'white' to lowerCase
+		if(this._color == 'black'){
+			return this._name.substring(0,1).toUpperCase();
+		}if(this._color == 'white'){
+			return this._name.substring(0,1).toLowerCase();
+		}
 	},
 	getString: function(){
-		return (this._name + " " + this._color + " " + this._position).toString();
+		return (this._color + " " + this._name + " " + this._position).toString();
 	},
 	getHTML: function(){
-		return 
-	}	
+		return  
+	}
 }
 
-var rook = new Piece('white', 'rook', 'queenside');
+var rook = new Piece('black', 'rook', 'queenside');
 console.log(rook.getAbbrev());
 console.log(rook.getString());
 
-
-it('should show that a new "Piece" "rook" has been a color of white', function(){
-	assert.equal(rook.getColor(), 'white');
+it('should test Knights', function() {
+	var Knight = new Piece('black', 'knight', 'queenside');
+	assert.equal(Knight.getColor(), 'black');
+	assert.equal(Knight.getName(), 'knight');
+	assert.equal(Knight.getAbbrev(), 'K');
+	assert.equal(Knight.getString(), 'black knight queenside');
 });
+
+
