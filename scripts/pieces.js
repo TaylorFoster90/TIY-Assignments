@@ -26,7 +26,10 @@ Piece.prototype = {
 		return (this._color + " " + this._name + " " + this._position).toString();
 	},
 	getHTML: function(){
-		return  
+		return this._unicode;
+	},
+	getUTF: function(){
+		return //the UTF value
 	}
 }
 
@@ -36,10 +39,13 @@ console.log(rook.getString());
 
 it('should test Knights', function() {
 	var Knight = new Piece('black', 'knight', 'queenside');
+	Knight._unicode = "&#9822;"
+	console.log(Knight);
 	assert.equal(Knight.getColor(), 'black');
 	assert.equal(Knight.getName(), 'knight');
 	assert.equal(Knight.getAbbrev(), 'K');
 	assert.equal(Knight.getString(), 'black knight queenside');
+	assert.equal(Knight.getHTML(), '&#9822;')
 });
 
 
