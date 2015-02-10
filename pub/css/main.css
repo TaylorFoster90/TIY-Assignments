@@ -97,138 +97,93 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-
-.nav li {
-    font-size: 1.3em;
-}
-.repos {
-    list-style: none;
-    border:1px solid grey;
-    padding:0;
-    border-radius: .2em;
-}
-.repos > li {
-    position: relative;
-    display: block;
-    border-bottom:1px solid grey;
-    padding:1% 2% 2% 1%;
-}
-#pop {
-    background-color: #dddddd;
-    padding: .3% 0;
-    font-weight: bold;
-}
-aside {
-    text-align: center;
-}
-#avatar {
-    height: 230px;
-    width:230px;
+table {
+    width: 90%;
 }
 
-aside ul {
-    padding:0;
-    list-style: none;
-    border-top: 1px solid #dbdbdb;
-    border-bottom: 1px solid #dbdbdb;
-    text-align: left;
-}
-aside li{
-    padding: .5em 0;
-}
-aside li:before{
-    color: grey;
-}
-aside p{
-    display: inline-block;
-    text-align: center;
-}
-aside p::first-line{
-    font-size: 1.5em;
-    font-weight: bolder;
-}
-figcaption {
-    display: block;
-    font-weight: bold;
-    font-size: 2em;
-}
-.repos p {
-    position: absolute;
-    right: 2px;
-    color: #7b7b7b;
-}
+    thead th {
+        border-bottom: 1px solid black;
+    }
+    tbody th {
+        border-right: 1px solid black;
+        text-align: right;
+    }
+    tbody td {
+        width: 10%;
+        padding-bottom: 10%;
+        border: 1px solid black;
+    }
+    tbody :nth-child(even) td:nth-child(even),
+    tbody :nth-child(odd) td:nth-child(odd){
+        background-color: violet;
+    }
+/*Chess Pieces*/
 
-li span {
-    margin-right: 3px;
-}
-#b-tab {
-    list-style: none;
-}
-#b-tab li{
-    border-bottom: 1px solid #d4d4d4;
+/*Black Pieces*/
 
-}
-#b-tab h3{
-    font-size: 1.5em;
-    font-weight: bold;
+/*Rooks*/
+    #A8:before, #H8:before {
+        content:"\265C";
+        position: absolute;
+    }
+/*knights*/
+    #B8:before, #G8:before {
+        content: "\265E";
+        position: absolute;
+    }
+/*bishops*/
+    #C8:before, #F8:before {
+        content: "\265D";
+        position: absolute;
+    }
+/*Queen*/
+    #D8:before {
+        content: "\265B";
+        position: absolute;
+    }
+/*king*/
+    #E8:before {
+        content: "\265A";
+        position: absolute;
+    }
+/* pons */
+    #A7:before, #B7:before, #C7:before, #D7:before, #E7:before, #F7:before, #G7:before, #H7:before{
+        position: absolute;
+        content: "\265F"
+    }
 
-}
-#b-tab address {
-    color: #a4a4a4;
-    font-style: italic;
+/* white pieces */
 
-}
-#b button {
-    height: 2.5em;
-    border-radius: 2px;
-    background-color: white;
-    width: 5em;
-    font-weight: bold;
-    box-shadow: 1px 1px 5px #cdcdcd inset;
-
-}
-.stat-icons {
-    float: right;
-    color: #b4b4b4;
-}
-#b-tab span {
-
-}
-#b-tab p {
-
-}
-textarea {
-    margin-top: 2em;
-    width: 80%;
-    background-color: #f1f1f1;
-    border: 1px solid black;
-    margin: 0 auto;
-}
-textarea:focus{
-    background-color: white;
-}
-
-#comment-button {
-    margin-top: .3em;
-    margin-bottom: 3em;
-    height: 2.5em;
-    border-radius: 5px;
-    width: 8em;
-    background-color: #45c007;
-    color: white;
-    font-weight: bold;
-    border-color: white;
-    box-shadow: 2px 2px 2px #328f05;
-}
-
-
-
-
-
-
-
-
+/* rooks */
+    #A1:before, #H1:before{
+        content: "\2656";
+        position: absolute;
+    }
+/*knights*/
+    #B1:before, #G1:before {
+        content:"\2658";
+        position: absolute; 
+    }
+/*bishops*/
+    #C1:before, #F1:before {
+        content: "\2657";
+        position: absolute;
+    }
+/*queen*/
+    #D1:before {
+        content: "\2655" ;
+        position: absolute;
+    }
+/*king*/
+    #E1:before {
+        content: "\2654";
+        position: absolute;
+    }
+/*pawns*/
+    #A2:before, #B2:before, #C2:before, #D2:before, #E2:before, #F2:before, #G2:before, #H2:before {
+        content: "\2659";
+        position: absolute;
+    }
 /* ==========================================================================
    Helper classes
    ========================================================================== */

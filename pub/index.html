@@ -11,8 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -23,132 +22,119 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div class="row">
-          <header class="col-md-12">
-            <i class="fa fa-github" style="font-size:3em"></i>
-            <input type="search" placeholder="Search GitHub">
-        </div>
 
-        <div class="container-fluid"> 
-        <aside class="col-md-3 col-xs-6 col-sm-3">
-            <figcaption id="login"> </figcaption>
-          <ul>
-            <li id="company"></li>
-            <li id="location"></li>
-            <li> <a href="#" id="email"></a></li>
-            <li><a href="http://www.github.com/blog" id="website"></a></li>
-            <li id="joined"></li>
-          </ul>
-            <a href="#">
-              <p id="followers"></p>
-            </a>
-            <a href="#">
-              <p id="stars">2 <br> Starred</p>
-            </a>
-            <a href="#">
-              <p id="following"></p>
-            </a>
-            </aside>
-            <div class="col-md-9 col-sm-9 col-xs-12">
-            <ul class="nav nav-tabs">
-              <li class="active"><a href="#a" class="fa fa-plus-square-o" data-toggle="tab"> Contributions</a></li>
-              <li><a href="#b" data-toggle="tab" class="fa fa-server"> Respositories</a></li>
-            </ul>
-            </div>
-            <div class="tab-content">
-              <div class="tab-pane active" id="a">
-                <ul class="col-md-9 col-sm-9 col-xs-12 repos">
-                  <li id="pop">Popular Respositories</li>
-                  <li>
-                    <p class="fa fa-star"> 9,733</p>
-                    <strong><a href="#"><span class="glyphicon glyphicon-book"></span>Spoon-Knife</a></strong>
-                    <br>
-                    <small>This repo if for demonstration purposes only</small>
-                  </li>
-                  <li>
-                    <p class="fa fa-star"> 1,404</p>
-                    <strong><a href="#"><span class="glyphicon glyphicon-book"></span>Hello-World</a></strong>
-                    <br>
-                    <small>This your first repo</small>
-                  </li>
-                  <li>
-                    <p class="fa fa-star"> 8</p>
-                    <strong><a href="#"><span class="glyphicon glyphicon-book"></span>hello-world</a></strong>
-                    <br>
-                    <small>My first repo on github</small>
-                  </li>
-                  <li>
-                    <p class="fa fa-star"> 6</p>
-                    <strong><a href="#"><span class="glyphicon glyphicon-book"></span>octocat.github.io</a></strong>
-                    <br>
-                  </li>
-                  <li>
-                    <p class="fa fa-star"> 4</p>
-                    <strong><a href="#"><span class="glyphicon glyphicon-book"></span>git-consortium</a></strong>
-                    <br>
-                    <small>This repo if for demonstration purposes only</small>
-                  </li>
-                </ul>
-            </div>
-               <div class="tab-pane" id="b">
-               <ul class="col-md-8 col-xs-12 col-sm-9" id="b-tab">
-                <li>
-                  <input type="text" placeholder="find a respository..." style="height:2.5em; width: 20em; margin-top: 1em; margin-right:.5em;"><button type="button">Search</button>
-                  <h3><a href="#">Spoon-Knife</a></h3>
-                   <div class="stat-icons"><span class="fa fa-star"> 9,734</span><span class="fa fa-code-fork"> 47,847</span></div>
-                  <p>
-                      <span>This repo is for demonstration purposes only.</span>
-                      <address>Updated on Sep 3, 2014</address>
-                    </p>
-                </li>
-                <li>
-                  <h3><a href="#">hello-world</a></h3>
-                  <div class="stat-icons"><span class="fa fa-star"> 8</span><span class="fa fa-code-fork"> 13</span></div>
-                  <p>
-                      <span>My first repository on GutHub.</span>
-                      <address>Updated on Jun 18, 2014</address>
-                    </p>
-                </li>
-                <li>
-                  <h3><a href="#">Hello-World</a></h3>
-                  <div class="stat-icons"><span class="fa fa-star"> 1,403</span><span class="fa fa-code-fork"> 1,091</span></div>
-                  <p>
-                      <span>This your first repo!</span>
-                      <address>Updated on Jun 11, 2014</address>
-                    </p>
-                </li>
-                <li>
-                  <h3><a href="#">octocat.github.io</a></h3>
-                  <div class="stat-icons"><span class="fa fa-star"> 9,734</span><span class="fa fa-code-fork"> 47,847</span></div>
-                    <p>
-                      <adress>updated on Apr 27, 2014</adress>
-                    </p>
-                </li>
-                <li>
-                  <h3><a href="#">git-consortium</a></h3>
-                  <div class="stat-icons"><span class="fa fa-star"> 9,734</span><span class="fa fa-code-fork"> 47,847</span></div>
-                  <p>
-                      <span>This repo if for demonstration purposes only</span>
-                      <address>Updated on Mar 28, 2014</address>
-                    </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        <div class="col-md-12">
-          <textarea placeholder="leave a comment at the tone" rows="6" id="comments"></textarea>
-          <button type="button" id="comment-button">Comment</button>
-         </div>
-        </div>
-        <!-- bower:JS -->
-        <!-- endbower -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<div class="container">
+<table>
+    <thead>
+        <tr>
+            <td> </td>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+            <th>E</th>
+            <th>F</th>
+            <th>G</th>
+            <th>H</th>
+        </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th>8</th>
+        <td id="A8"> </td>
+        <td id="B8"> </td>
+        <td id="C8"> </td>
+        <td id="D8"> </td>
+        <td id="E8"> </td>
+        <td id="F8"> </td>
+        <td id="G8"> </td>
+        <td id="H8"> </td>
+    </tr>
+    <tr>
+        <th>7</th>
+        <td id="A7"> </td>
+        <td id="B7"> </td>
+        <td id="C7"> </td>
+        <td id="D7"> </td>
+        <td id="E7"> </td>
+        <td id="F7"> </td>
+        <td id="G7"> </td>
+        <td id="H7"> </td>
+    </tr>
+    <tr>
+        <th>6</th>
+        <td id="A6"> </td>
+        <td id="B6"> </td>
+        <td id="C6"> </td>
+        <td id="D6"> </td>
+        <td id="E6"> </td>
+        <td id="F6"> </td>
+        <td id="G6"> </td>
+        <td id="H6"> </td>
+    </tr>
+    <tr>
+        <th>5</th>
+        <td id="A5"> </td>
+        <td id="B5"> </td>
+        <td id="C5"> </td>
+        <td id="D5"> </td>
+        <td id="E5"> </td>
+        <td id="F5"> </td>
+        <td id="G5"> </td>
+        <td id="H5"> </td>
+    </tr>
+    <tr>
+        <th>4</th>
+        <td id="A4"> </td>
+        <td id="B4"> </td>
+        <td id="C4"> </td>
+        <td id="D4"> </td>
+        <td id="E4"> </td>
+        <td id="F4"> </td>
+        <td id="G4"> </td>
+        <td id="H4"> </td>
+    </tr>
+    <tr>
+        <th>3</th>
+        <td id="A3"> </td>
+        <td id="B3"> </td>
+        <td id="C3"> </td>
+        <td id="D3"> </td>
+        <td id="E3"> </td>
+        <td id="F3"> </td>
+        <td id="G3"> </td>
+        <td id="H3"> </td>
+    </tr>
+     <tr>
+        <th>2</th>
+        <td id="A2"> </td>
+        <td id="B2"> </td>
+        <td id="C2"> </td>
+        <td id="D2"> </td>
+        <td id="E2"> </td>
+        <td id="F2"> </td>
+        <td id="G2"> </td>
+        <td id="H2"> </td>
+    </tr>
+    <tr>
+        <th>1</th>
+        <td id="A1"> </td>
+        <td id="B1"> </td>
+        <td id="C1"> </td>
+        <td id="D1"> </td>
+        <td id="E1"> </td>
+        <td id="F1"> </td>
+        <td id="G1"> </td>
+        <td id="H1"> </td>
+    </tr>
+    </tbody>
+</table>
+</div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script>
-        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
