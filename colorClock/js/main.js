@@ -24,7 +24,7 @@ function clockWork(){
 clockWork();
 
 $('#button').on('click', function(){
-	$("#time, #clock").toggle("fast", function() {
+	$("#time, #clock").toggle( function() {
 		$("#time, #clock").addClass('hide')
 	});
 });

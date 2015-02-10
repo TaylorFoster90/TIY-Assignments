@@ -99,14 +99,24 @@ textarea {
 
 
 h1 {
-    text-align: center;
     color: white;
+    font-size: 6em;
+
 
 }
 .hide{
     display: none;
 }
-
+#button {
+    text-align: center;
+    color: white;
+    background-color: white;
+    border-color: white;
+}
+.container {
+    margin-top: 10%;
+    text-align: center;
+}
 
 
 
