@@ -1,8 +1,9 @@
+var d = new Date();
 function clockWork(){
-	var d = new Date();
-	var h = d.getHours();
-	var m = d.getMinutes();
-	var s = d.getSeconds();
+	// var h = d.getHours();
+	// var m = d.getMinutes();
+	// var s = d.getSeconds();
+	d.setSeconds(d.getSeconds() + 1);
 	var hhex = Math.floor(h * 255/24).toString(16);
 	var mhex = Math.floor(m * 255/59).toString(16);
 	var shex = Math.floor(s * 255/59).toString(16);
@@ -19,12 +20,11 @@ function clockWork(){
 	$('html').css("background-color", clockColor);
 	$('#clock').text(clockColor);
 	$('#time').text(realTime);
-	setInterval(clockWork, 1000);
 };
-clockWork();
+setInterval(clockWork, 1000); //must be OUTSIDE the function
 
 $('#button').on('click', function(){
-	$("#time, #clock").toggle( function() {
+	$("#time, #clock").toggle('fast', function() {
 		$("#time, #clock").addClass('hide')
 	});
 });
