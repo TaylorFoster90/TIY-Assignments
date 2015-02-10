@@ -22,3 +22,9 @@ function clockWork(){
 	setInterval(clockWork, 1000);
 };
 clockWork();
+
+$('#button').on('click', function(){
+	$("#time, #clock").toggle("fast", function() {
+		$("#time, #clock").addClass('hide')
+	});
+});
