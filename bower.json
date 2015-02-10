@@ -6,7 +6,7 @@
     "Taylor Foster <tagfoster90@gmail.com>"
   ],
   "description": "bower",
-  "license": "CC)",
+  "license": "CC0",
   "private": true,
   "ignore": [
     "**/.*",
