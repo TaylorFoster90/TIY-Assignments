@@ -1,7 +1,8 @@
-var assert = chai.assert;
-var vm = new Vue({/* opttions */});
+var vm = new Vue({
+	el: '#chessboard',
+	data: {
+		message: 'hello from Vue'
+	}
+});
 
-assert.isDefined(vm.$el);
-console.assert(vm.$el);
-console.log(vm.$el);
-console.log(vm.$data);
+vm.message = 'do you like my hat'
