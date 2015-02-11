@@ -41,7 +41,18 @@ Piece.prototype = {
 		if(this._color + this._name == 'black' + 'pawn') return "&#9823;";	
 	},
 	getUTF: function(){
-		// confused on this function
+		if(this._color + this._name == 'white' + 'king') return "U+2654";
+		if(this._color + this._name == 'white' + 'queen') return "U+2655";
+		if(this._color + this._name == 'white' + 'rook') return "U+2656";
+		if(this._color + this._name == 'white' + 'bishop') return "U+2657";
+		if(this._color + this._name == 'white' + 'knight') return "U+2658";
+		if(this._color + this._name == 'white' + 'pawn') return "U+2659";
+		if(this._color + this._name == 'black' + 'king') return "U+265A";
+		if(this._color + this._name == 'black' + 'queen') return "U+265B";
+		if(this._color + this._name == 'black' + 'rook') return "U+265C";
+		if(this._color + this._name == 'black' + 'bishop') return "U+265D";
+		if(this._color + this._name == 'black' + 'knight') return "U+265E";
+		if(this._color + this._name == 'black' + 'pawn') return "U+265F";
 	}
 }
 
