@@ -27,16 +27,18 @@ Piece.prototype = {
 		return (this._color + " " + this._name + " " + this._position).toString();
 	},
 	getHTML: function(){
-		//confused on this functions
+		//confused on this function
+		
 	},
 	getUTF: function(){
-		// confused on this functions
+		// confused on this function
 	}
 }
 
 var rook = new Piece('black', 'rook', 'queenside');
 console.log(rook.getAbbrev());
 console.log(rook.getString());
+console.log(String.fromCharCode(9812));
 
 it('should test Knights', function() {
 	var Knight = new Piece('black', 'knight', 'queenside');
@@ -46,4 +48,18 @@ it('should test Knights', function() {
 	assert.equal(Knight.getString(), 'black knight queenside');
 });
 
+it('should test Pawns', function() {
+	var Pawn = new Piece('white', 'pawn', 'e4');
+	assert.equal(Pawn.getColor(), 'white');
+	assert.equal(Pawn.getName(), 'pawn');
+	assert.equal(Pawn.getAbbrev(), 'p');
+	assert.equal(Pawn.getString(), 'white pawn e4');
+});
 
+it('should test Queens', function() {
+	var Queen = new Piece('black', 'queen', 'a5');
+	assert.equal(Queen.getColor(), 'black');
+	assert.equal(Queen.getName(), 'queen');
+	assert.equal(Queen.getAbbrev(), 'Q');
+	assert.equal(Queen.getString(), 'black queen a5');
+});
