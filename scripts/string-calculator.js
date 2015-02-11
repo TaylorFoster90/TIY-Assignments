@@ -13,6 +13,7 @@ var num = {
 	'nine': 9,
 	'ten': 10
 }
+
 function key(n){
 	return num[n];
 }
