@@ -68,6 +68,7 @@ it('should test Knights', function() {
 	assert.equal(Knight.getAbbrev(), 'K');
 	assert.equal(Knight.getString(), 'black knight queenside');
 	assert.equal(Knight.getHTML(), '&#9822;')
+	assert.equal(Knight.getUTF(), 'U+265E')
 });
 
 it('should test Pawns', function() {
