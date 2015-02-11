@@ -27,8 +27,18 @@ Piece.prototype = {
 		return (this._color + " " + this._name + " " + this._position).toString();
 	},
 	getHTML: function(){
-		//confused on this function
-		
+		if(this._color + this._name == 'white' + 'king') return "&#9812;";
+		if(this._color + this._name == 'white' + 'queen') return "&#9813;";
+		if(this._color + this._name == 'white' + 'rook') return "&#9814;";
+		if(this._color + this._name == 'white' + 'bishop') return "&#9815;";
+		if(this._color + this._name == 'white' + 'knight') return "&#9816;";
+		if(this._color + this._name == 'white' + 'pawn') return "&#9817;";
+		if(this._color + this._name == 'black' + 'king') return "&#9818;";
+		if(this._color + this._name == 'black' + 'queen') return "&#9819;";
+		if(this._color + this._name == 'black' + 'rook') return "&#9820;";
+		if(this._color + this._name == 'black' + 'bishop') return "&#9821;";
+		if(this._color + this._name == 'black' + 'knight') return "&#9822;";
+		if(this._color + this._name == 'black' + 'pawn') return "&#9823;";	
 	},
 	getUTF: function(){
 		// confused on this function
@@ -38,7 +48,7 @@ Piece.prototype = {
 var rook = new Piece('black', 'rook', 'queenside');
 console.log(rook.getAbbrev());
 console.log(rook.getString());
-console.log(String.fromCharCode(9812));
+console.log(rook.getHTML());
 
 it('should test Knights', function() {
 	var Knight = new Piece('black', 'knight', 'queenside');
@@ -46,6 +56,7 @@ it('should test Knights', function() {
 	assert.equal(Knight.getName(), 'knight');
 	assert.equal(Knight.getAbbrev(), 'K');
 	assert.equal(Knight.getString(), 'black knight queenside');
+	assert.equal(Knight.getHTML(), '&#9822;')
 });
 
 it('should test Pawns', function() {
