@@ -5,4 +5,3 @@ var vm = new Vue({
 	}
 });
 
-vm.message = 'do you like my hat'
