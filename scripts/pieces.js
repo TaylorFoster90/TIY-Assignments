@@ -18,7 +18,8 @@ Piece.prototype = {
 		//This function returns 'black' pieces to upperCase and 'white' to lowerCase
 		if(this._color == 'black'){
 			return this._name.substring(0,1).toUpperCase();
-		}if(this._color == 'white'){
+		}
+		if(this._color == 'white'){
 			return this._name.substring(0,1).toLowerCase();
 		}
 	},
@@ -26,10 +27,10 @@ Piece.prototype = {
 		return (this._color + " " + this._name + " " + this._position).toString();
 	},
 	getHTML: function(){
-		return this._unicode;
+		//confused on this functions
 	},
 	getUTF: function(){
-		return //the UTF value
+		// confused on this functions
 	}
 }
 
@@ -39,13 +40,10 @@ console.log(rook.getString());
 
 it('should test Knights', function() {
 	var Knight = new Piece('black', 'knight', 'queenside');
-	Knight._unicode = "&#9822;"
-	console.log(Knight);
 	assert.equal(Knight.getColor(), 'black');
 	assert.equal(Knight.getName(), 'knight');
 	assert.equal(Knight.getAbbrev(), 'K');
 	assert.equal(Knight.getString(), 'black knight queenside');
-	assert.equal(Knight.getHTML(), '&#9822;')
 });
 
 
