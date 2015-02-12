@@ -29,46 +29,14 @@
     <thead>
         <tr>
             <td v-text="message"> </td>
-            <th>A</th>
-            <th>B</th>
-            <th>C</th>
-            <th>D</th>
-            <th>E</th>
-            <th>F</th>
-            <th>G</th>
-            <th>H</th>
+            <th v-repeat="letter: 'ABCDEFGH'" id="header-{{letter}}">{{letter}}</th>
         </tr>
     </thead>
     <tbody>
-    <tr>
-        <th>8</th>
-        <td v-repeat="8"></td>
+    <tr v-repeat="8">
+        <th>{{8 - $index}}</th>
+        <td v-repeat="8" id="cell-{{8 - $index}}"></td>
     </tr>
-    <tr>
-        <th>7</th>
-        <td v-repeat="8"></td>
-    </tr>
-    <tr>
-        <th>6</th>
-        <td v-repeat="8"></td>
-    <tr>
-        <th>5</th>
-        <td v-repeat="8"></td>
-    </tr>
-    <tr>
-        <th>4</th>
-        <td v-repeat="8"></td>
-    </tr>
-    <tr>
-        <th>3</th>
-        <td v-repeat="8"></td>
-    </tr>
-     <tr>
-        <th>2</th>
-        <td v-repeat="8"></td>
-    <tr>
-        <th>1</th>
-        <td v-repeat="8"></td>
     </tbody>
 </table>
 </div>
