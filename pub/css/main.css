@@ -117,73 +117,7 @@ table {
     tbody :nth-child(odd) td:nth-child(odd){
         background-color: violet;
     }
-/*Chess Pieces*/
 
-/*Black Pieces*/
-
-/*Rooks*/
-    #A8:before, #H8:before {
-        content:"\265C";
-        position: absolute;
-    }
-/*knights*/
-    #B8:before, #G8:before {
-        content: "\265E";
-        position: absolute;
-    }
-/*bishops*/
-    #C8:before, #F8:before {
-        content: "\265D";
-        position: absolute;
-    }
-/*Queen*/
-    #D8:before {
-        content: "\265B";
-        position: absolute;
-    }
-/*king*/
-    #E8:before {
-        content: "\265A";
-        position: absolute;
-    }
-/* pons */
-    #A7:before, #B7:before, #C7:before, #D7:before, #E7:before, #F7:before, #G7:before, #H7:before{
-        position: absolute;
-        content: "\265F"
-    }
-
-/* white pieces */
-
-/* rooks */
-    #A1:before, #H1:before{
-        content: "\2656";
-        position: absolute;
-    }
-/*knights*/
-    #B1:before, #G1:before {
-        content:"\2658";
-        position: absolute; 
-    }
-/*bishops*/
-    #C1:before, #F1:before {
-        content: "\2657";
-        position: absolute;
-    }
-/*queen*/
-    #D1:before {
-        content: "\2655" ;
-        position: absolute;
-    }
-/*king*/
-    #E1:before {
-        content: "\2654";
-        position: absolute;
-    }
-/*pawns*/
-    #A2:before, #B2:before, #C2:before, #D2:before, #E2:before, #F2:before, #G2:before, #H2:before {
-        content: "\2659";
-        position: absolute;
-    }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
