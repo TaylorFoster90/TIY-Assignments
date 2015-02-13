@@ -58,5 +58,5 @@ function answer(){
 		}
 }
 }
-console.log(answer());
+
 
