@@ -6,7 +6,7 @@ var pushEvents = events.filter(function(item){
 	return item.type == 'PushEvent'
 });
 
-var pushDates = _.pull(pushEvents, {'created_at' :});
+var pushDates = _.map(pushEvents, 'created_at');
 
 console.log(pushDates)
 
