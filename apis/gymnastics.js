@@ -21,16 +21,16 @@ var deleteEvent = events.filter(function(item){
 var prEvent = events.filter(function(item){
 	return item.type == 'PullRequestEvent'
 });
+
 function getDate(a){ 
 	return _.map(a, 'created_at')
 }
 function getDiff(a,b){
-	return _.first(a).substring(0.10).localeCompare(_.last(b).substring(0.10)) + 1;
+	return _.first(a).substring(0,10).localeCompare(_.last(b).substring(0,10)) + 1;
 }
 function avg(item) {
 	var diff = getDiff(getDate(events),getDate(events));
 	return item.length / diff
-
 }
 
 function answer(){
@@ -60,3 +60,4 @@ function answer(){
 }
 
 
+console.log(getDate(events));
