@@ -96,9 +96,12 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+.container {
+    padding: 0 10%;
+}
 ul {
     list-style: none;
+    padding-left: 0;
 }
 ul h3 {
     border-bottom: solid 1px white;
@@ -108,32 +111,37 @@ ul h3 {
     color: #3594cb;
     position: absolute;
     font-size: 2em;
-    margin-top: -1em;
+    margin-top: -.8em;
 }
 .even:before{
     content: "\25C6";
-    color: #6cbfee;
+    color:  #6cbfee;
     position: absolute;
     font-size: 2em;
-    margin-top: -1em;
+    margin-top: -.8em;
 }
 li {
-    
-}
-article {
     color: white;
+    padding: 1% 5%;
     font-family: sans-serif;
     position: relative;
     border-radius: .5em;
 }
-
+ul div{
+    position: relative;
+    margin-top: 1em;
+}
 ul span {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.5em;
+}
+ul i {
     background-color: #3594cb;
     color: white;
-    font-size: 2em;
-    float: right;
-    padding:.2em;
-    border: .2em solid #5cdef3;
+    padding:.3em;
+    border: .4em solid #5cdef3;
     border-radius: 50%;
 }
 time{

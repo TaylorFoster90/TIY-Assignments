@@ -26,14 +26,11 @@ var numbers = {
 
 
 //got somewhat of a loop here, see if i can get this to work
-function roger(go){
-	for(var key in numbers){
+for(var key in numbers){
 	if (numbers.hasOwnProperty(key)){
-	return	_.assign({key: go+key})
+		return	_.assign({key:key})
+		}
 	}
-}
-}
-console.log(_.invert(roger('twenty')))
 function plus(a,b){
 	return numbers[a] + numbers[b];
 };
