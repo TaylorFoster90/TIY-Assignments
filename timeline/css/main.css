@@ -98,15 +98,10 @@ textarea {
    ========================================================================== */
 
 ul {
-    padding-left: 10%;
-    padding-right: 10%;
     list-style: none;
 }
 ul h3 {
     border-bottom: solid 1px white;
-    width: 95%;
-    padding: 1em 0;
-    margin: 0 auto;
 }
 .odd:before{
     content: "\25C6";
@@ -123,21 +118,15 @@ ul h3 {
     margin-top: -1em;
 }
 li {
-    margin-top: 3em;
+    
 }
 article {
     color: white;
     font-family: sans-serif;
-    margin-top: 1.5em;
     position: relative;
     border-radius: .5em;
 }
 
-li p {
-    width: 90%;
-    margin: 0 auto;
-    padding: 2em 0;
-}
 ul span {
     background-color: #3594cb;
     color: white;
@@ -277,17 +266,6 @@ time big {
 
 
 @media (min-width: 768px) {
-      .container{
-        padding-left: 10%;
-      }
-      ul {
-        padding-right: 0;
-        padding-left: 5%;
-        border-left: solid 1.5em #5cdef3;
-      }
-      .box {
-        float: left;
-      }
 }
 
   @media (min-width: 992px){
