@@ -23,7 +23,14 @@ var numbers = {
 	nineteen: 19,
 	twenty: 20
 }
+//what turned into a great idea became a complete wreck will revisit later
+function twen(){
+	var input = 2;
+	for(input=0; input < numbers[8]; input++)
+		return input[i];
+}
 
+console.log(twen());
 
 function plus(a,b){
 	return numbers[a] + numbers[b];
