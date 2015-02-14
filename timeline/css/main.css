@@ -141,19 +141,17 @@ ul i {
     background-color: #3594cb;
     color: white;
     padding:.3em;
-    border: .4em solid #5cdef3;
+    border: .4em solid #afdcf8;
     border-radius: 50%;
 }
-time{
-    text-align: center;
-}
+
 time small{
     color:#bdd0db;
     font-size: 1em;
 }
 time big {
     font-size: 2em;
-    color: #6cbfee;
+    color: #afdcf8;
 }
 
 
@@ -273,7 +271,34 @@ time big {
    ========================================================================== */
 
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
+    body {
+        background-color: green;
+    }
+    .container{
+        padding: 0 8% 0 20%;
+        position: relative;
+    }
+    .odd:before{
+        font-size: 4em;
+        margin-top: 0;
+        margin-left: -.7em;
+    }
+    .even:before{
+        font-size: 4em;
+        margin-top: 0;
+        margin-left: -.7em;
+    }
+    ul {
+        border-left: solid #afdcf8 1em;
+        padding-left: 5%;
+    }
+    ul div {
+        border: solid;
+        position: absolute;
+        width: 17%;
+    }
+
 }
 
   @media (min-width: 992px){
