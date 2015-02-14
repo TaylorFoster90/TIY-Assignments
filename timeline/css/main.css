@@ -123,7 +123,6 @@ ul h3 {
     margin-top: -1em;
 }
 li {
-    position: relative;
     margin-top: 3em;
 }
 article {
@@ -276,9 +275,24 @@ time big {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+
+@media (min-width: 768px) {
+      .container{
+        padding-left: 10%;
+      }
+      ul {
+        padding-right: 0;
+        padding-left: 5%;
+        border-left: solid 1.5em #5cdef3;
+      }
+      .box {
+        float: left;
+      }
 }
+
+  @media (min-width: 992px){
+
+  }
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
