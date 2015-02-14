@@ -103,21 +103,24 @@ ul {
 ul h3 {
     border-bottom: solid 1px white;
     width: 95%;
-    margin:0 auto;
+    padding: 1em 0;
+    margin: 0 auto;
 }
 li {
-    background-color: lightblue;
+    background-color: #6cbfee;
     color: white;
     font-family: sans-serif;
     margin-top: 3%;
     position: relative;
+    border-radius: .5em;
 }
 li p {
     width: 90%;
     margin: 0 auto;
+    padding: 2em 0;
 }
 li:nth-child(even){
-    background-color: darkblue;
+    background-color: #3594cb;
 }
 
 

@@ -23,14 +23,14 @@ var numbers = {
 	nineteen: 19,
 	twenty: 20
 }
-//what turned into a great idea became a complete wreck will revisit later
-function twen(){
-	var input = 2;
-	for(input=0; input < numbers[8]; input++)
-		return input[i];
-}
 
-console.log(twen());
+
+//got somewhat of a loop here, see if i can get this to work
+for(var key in numbers){
+	if (numbers.hasOwnProperty(key)){
+		console.log('twenty' + key + 2 + numbers[key])
+	}
+}
 
 function plus(a,b){
 	return numbers[a] + numbers[b];
