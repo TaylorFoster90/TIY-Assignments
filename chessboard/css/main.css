@@ -96,63 +96,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.container {
-    padding: 0 15%;
-}
-ul {
-    list-style: none;
-    padding-left: 0;
-}
-ul h3 {
-    border-bottom: solid 1px white;
-}
-.odd:before{
-    content: "\25C6";
-    color: #3594cb;
-    position: absolute;
-    font-size: 2em;
-    margin-top: -.8em;
-}
-.even:before{
-    content: "\25C6";
-    color:  #6cbfee;
-    position: absolute;
-    font-size: 2em;
-    margin-top: -.8em;
-}
-li {
-    color: white;
-    padding: 1% 5%;
-    font-family: sans-serif;
-    position: relative;
-    border-radius: .5em;
-}
-ul div{
-    position: relative;
-    margin-top: 1em;
-}
-ul span {
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-size: 1.5em;
-}
-ul i {
-    background-color: #3594cb;
-    color: white;
-    padding:.3em;
-    border: .4em solid #afdcf8;
-    border-radius: 50%;
-}
 
-time small{
-    color:#bdd0db;
-    font-size: 1em;
-}
-time big {
-    font-size: 2em;
-    color: #afdcf8;
-}
+
+
+
+
+
+
 
 
 
@@ -270,42 +220,9 @@ time big {
    Modify as content requires.
    ========================================================================== */
 
-
-@media (min-width: 800px) {
-    .container{
-        padding: 0 5% 0 20%;
-        position: relative;
-    }
-    .odd:before{
-        font-size: 4em;
-        margin-top: -.5em;
-        margin-left: -.8em;
-    }
-    .even:before{
-        font-size: 4em;
-        margin-top: -.5em;
-        margin-left: -.8em;
-    }
-    li{
-        margin-top: 1em;
-    }
-    ul {
-        border-left: solid #afdcf8 1em;
-        padding-left: 5%;
-        position: relative;
-    }
-    ul div {
-        position: absolute;
-        left: 0;
-        width: 10em;
-        margin-left: -140px;
-        margin-top: -6px;
-    }
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
 }
-
-  @media (min-width: 992px){
-
-  }
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
