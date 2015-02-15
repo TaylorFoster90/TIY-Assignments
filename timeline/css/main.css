@@ -97,7 +97,7 @@ textarea {
    Author's custom styles
    ========================================================================== */
 .container {
-    padding: 0 10%;
+    padding: 0 15%;
 }
 ul {
     list-style: none;
@@ -276,7 +276,7 @@ time big {
         background-color: green;
     }
     .container{
-        padding: 0 8% 0 20%;
+        padding: 0 5% 0 20%;
         position: relative;
     }
     .odd:before{
@@ -292,13 +292,15 @@ time big {
     ul {
         border-left: solid #afdcf8 1em;
         padding-left: 5%;
+        position: relative;
     }
     ul div {
         border: solid;
         position: absolute;
-        width: 17%;
+        left: 0;
+        width: 10em;
+        margin-left: -140px;
     }
-
 }
 
   @media (min-width: 992px){
