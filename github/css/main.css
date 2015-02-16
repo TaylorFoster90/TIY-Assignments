@@ -96,9 +96,25 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+#contributions li {
+    border: solid 1px;
+    padding: 5% 0;
+}
+h6 {
+    padding: 0;
+    margin: 0;
+}
+#contributions ul li:nth-child(1){
+    background-color: grey;
+    padding: 0;
+}
+#repositories li {
+    padding: 10% 0;
+}
 
 
 
