@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--bower:css-->
+        <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css" />
+        <!--endbower-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <header class="row">
+        </header>
+        <div class="container">
+            <aside class="col-md-3">
+                <img src="http://lorempixel.com/300/300" class="img-thumbnail">
+                <h3>{{username}}</h3>
+                <ul>
+                    <li class="website"></li>
+                    <li class="location"></li>
+                    <li class="email"></li>
+                    <li class="website"></li>
+                    <li class="member"></li>
+                </ul>
+                <nav class="navbar">
+                    <span>{{followers}}</span>
+                    <span>{{following}}</span>
+                    <span>{{starred}}</span>
+                </nav>
+            </aside>
+            <section class="col-md-9">
+                <div role="tabpanel">
+                  <!-- Nav tabs -->
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="active">
+                        <a href="#contributions" role="tab" data-toggle="tab">Contributions</a>
+                    </li>
+                    <li>
+                        <a href="#repositories" role="tab" data-toggle="tab">Profile</a>
+                    </li>
+                    <li>
+                        <a href="#public-activity" role="tab" data-toggle="tab">Public Activity</a>
+                    </li>
+                  </ul>
+                  <!-- Tab panes -->
+                  <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="contributions">
+                        <ul>
+                            <li>
+                                <h6>Popular Repositories</h6>
+                            </li>
+                            <li>
+                                <span>{{repo}}</span>
+                                <span>{{repo description}}</span>
+                                <span>{{stars}}</span>
+                            </li>
+                            <li class>
+                                <span>{{repo}}</span>
+                                <span>{{repo description}}</span>
+                                <span>{{stars}}</span>
+                            </li>
+                            <li class>
+                                <span>{{repo}}</span>
+                                <span>{{repo description}}</span>
+                                <span>{{stars}}</span>
+                            </li>
+                            <li class>
+                                <span>{{repo}}</span>
+                                <span>{{repo description}}</span>
+                                <span>{{stars}}</span>
+                            </li>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="repositories">
+                        <ul>
+                            <li>
+                                <span>{{Repo}}</span> 
+                                <span>{{Description}}</span>
+                                <span>{{forks}}{{stars}}</span>
+                            </li>
+                            <li>
+                                <span>{{Repo}}</span> 
+                                <span>{{Description}}</span>
+                                <span>{{forks}}{{stars}}</span>
+                            </li>
+                            <li>
+                                <span>{{Repo}}</span> 
+                                <span>{{Description}}</span>
+                                <span>{{forks}}{{stars}}</span>
+                            </li>
+                            <li>
+                                <span>{{Repo}}</span> 
+                                <span>{{Description}}</span>
+                                <span>{{forks}}{{stars}}</span>
+                            </li>
+                            <li>
+                                <span>{{Repo}}</span> 
+                                <span>{{Description}}</span>
+                                <span>{{forks}}{{stars}}</span>
+                            </li>
+                            <li>
+                                <span>{{Repo}}</span> 
+                                <span>{{Description}}</span>
+                                <span>{{forks}}{{stars}}</span>
+                            </li>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="public-activity">
+                        public
+                    </div>
+                  </div>
+                </div>
+        </div>
+        <!--bower:js-->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/lodash/lodash.js"></script>
+        <script src="../bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <!--endbower-->
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
