@@ -1,8 +1,8 @@
 var d = new Date();
 function clockWork(){
-	// var h = d.getHours();
-	// var m = d.getMinutes();
-	// var s = d.getSeconds();
+	var h = d.getHours();
+	var m = d.getMinutes();
+	var s = d.getSeconds();
 	d.setSeconds(d.getSeconds() + 1);
 	var hhex = Math.floor(h * 255/24).toString(16);
 	var mhex = Math.floor(m * 255/59).toString(16);
@@ -16,7 +16,7 @@ function clockWork(){
 	if(shex.length == 1){ hhex = "0" + shex};
 
 	realTime = h+":"+m+":"+s;
-	clockColor = "#" + hhex + mhex + shex; 
+	clockColor = "#" + hhex + mhex + shex;
 	$('html').css("background-color", clockColor);
 	$('#clock').text(clockColor);
 	$('#time').text(realTime);
